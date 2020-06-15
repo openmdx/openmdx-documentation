@@ -1,0 +1,136 @@
+# openMDX SDK 2.9 for Ant Step-by-Step #
+
+This guide explains how to install and setup _openMDX SDK 2.9_ step-by-step.
+
+## Download ##
+
+First, download the installer executables from [here](https://sourceforge.net/project/showfiles.php?group_id=75132):
+
+* _openmdxSdk-2.9.0-windows-installer.exe_ for Windows
+* _openmdxSdk-2.9.0-linux-installer.bin_ for Linux
+
+Before starting the installer make sure that you have installed
+
+* [JDK 1.6](http://java.sun.com/javase/downloads/widget/jdk6.jsp)
+* [Apache Ant 1.8.2](http://ant.apache.org/bindownload.cgi)
+* gcc required for Unix platforms only
+
+## Installation ##
+
+The installer first takes you to the welcome screen.
+
+[[img src=Sdk29.StepByStepAnt.p001.png]]
+
+On the next screen specify the installation directory. In this guide we will install the examples on a Windows platform in the directory _/tmp/SF/2.9/openmdxSdk-2.9.0_.
+
+[[img src=Sdk29.StepByStepAnt.p002.png]]
+
+Specify the _JDK 1.6_ home directory. You __MUST__ specify the home directory of a full _JDK 1.6_ installation. A __JRE installation is NOT sufficient__!
+
+[[img src=Sdk29.StepByStepAnt.p003.png]]
+
+In the next screen specify the home directory of _Apache Ant 1.8.0_.
+
+[[img src=Sdk29.StepByStepAnt.p004.png]]
+
+At the end of the installation the installer executes a post-installation script. This script prepares and compiles all projects. If everything goes well your log should look like this sample output [postinstallation-script-result.log](./attachment/Sdk29.StepByStepAnt.postinstallation-script-result.log). Possible failure reasons are:
+
+* On Windows platforms the system environment variable _JAVA_HOME_ does not point to a valid _JDK 1.6_
+* During installation the _JDK 1.6_ home or the _Apache Ant 1.8.2_ home directory are not specified correctly
+
+In any case, run uninstall, fix the error cause and run the installer again.
+
+[[img src=Sdk29.StepByStepAnt.p005.png]]
+
+The _README_ is shown during the last installation step. Read it! It says that _openMDX SDK 2.9_ contains the _openMDX/Core_ and _openMDX/Example_ projects. All projects come with an ant _build.xml_ accepting the following targets:
+
+* _clean_: clean the project
+* _install-src_: expand project source files
+* _deliverables_: compile and build JARs
+* _distribution_: compile, build JARs and distribution
+* _config_: display the project settings
+
+[[img src=Sdk29.StepByStepAnt.p006.png]]
+
+After successful installation the directory structure should look like the screen shown below. The top-level directories are:
+
+* _openmdx-2.9.0/core_
+* _openmdx-2.9.0/security_
+* _openmdx-2.9.0/portal_
+* _openmdx-2.9.0/openejb_
+* _openmdx-2.9.0/test-core_
+* _openmdx-example-2.9.0/helloworld_: contains the helloworld project
+* _openmdx-example-2.9.0/workshop_: contains the workshop project
+
+[[img src=Sdk29.StepByStepAnt.p007.png]]
+
+Now you are ready to build the projects and run the JUnit tests. Let's start with the _helloworld_ project. Open a shell and run the following commands:
+
+* cd to the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/helloworld_
+* Run _ant deliverables_
+* Run _ant test_
+
+After running ant test your console should look like shown below. Compare your output with this sample output [helloworld-ant-test.log](./attachment/Sdk29.StepByStepAnt.helloworld-ant-test.log).
+
+[[img src=Sdk29.StepByStepAnt.p108.png]]
+
+Next we build and test the _workshop_ project:
+
+* cd to the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/workshop_
+* Run _ant deliverables_
+* Run _ant test_
+
+After running ant test your console should look like shown below. Compare your output with this sample output [workshop-ant-test-with-errors.log](./attachment/Sdk29.StepByStepAnt.workshop-ant-test-with-errors.log).
+
+[[img src=Sdk29.StepByStepAnt.p110.png]]
+
+_ant test_ will report errors. The console output shows an URL pointing at the JUnit test report.
+
+[[img src=Sdk29.StepByStepAnt.p111.png]]
+
+Open the report with a browser and navigate to the error log. The stack trace shows that we have a _MEDIA_ACCESS_FAILURE_ exception and the description is _Failure when getting a connection from java:comp/env/jdbc/datasource\[0\]_. The workshop example tries to establish a database connection. However, this fails because we did not start the workshop database yet.
+
+[[img src=Sdk29.StepByStepAnt.p115.png]]
+
+The database connection URL is hard-coded in the JUnit test driver _TestExample_1.java_. 
+
+~~~~~~
+:::java
+public TestExample_1(
+	String name
+) throws NamingException{
+	super(name);
+	if(!NamingManager.hasInitialContextFactoryBuilder()) {
+		NonManagedInitialContextFactoryBuilder.install(
+			Collections.singletonMap(
+				"org.openmdx.comp.env.jdbc.jdbc_openmdx_example_workshop",
+				"jdbc:hsqldb:hsql:\\/\\/127.0.0.1:9002\\/WORKSHOP?user=sa&password=manager99&driver=org.hsqldb.jdbcDriver"
+			)
+		);
+	}
+}  
+~~~~~~
+
+Before we can run the test successfully we first have to start the _HSQLDB_ database engine as follows:
+
+* Go to the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/workshop/etc/data/workshop_
+* Run _startdb.bat_ on Windows platforms and _./startdb.sh_ on Linux platforms
+
+[[img src=Sdk29.StepByStepAnt.p120.png]]
+
+We are now ready to run ant test for the project _workshop_ again. This time the tests should complete without errors. Compare your console output with this sample output [workshop-ant-test-no-errors.log](./attachment/Sdk29.StepByStepAnt.workshop-ant-test-no-errors.log).
+
+You can also look at the database tables and data by launching the _HSQLDB_ database manager:
+
+* Go to the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/workshop/etc/data/workshop_
+* Run _startdbmanager.bat_ on Windows platforms and _./startdbmanager.sh_ on Linux platforms
+
+[[img src=Sdk29.StepByStepAnt.p125.png]]
+
+If you want to start with an empty database you can create a new database with the following steps:
+
+* Run _ant -Ddatabase.name="hsqldb-2" create-schema_.
+* Run the scripts _dbcreate-tables.sql_, _dbcreate-views.sql_ and _populate-preferences.sql_ located in the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/workshop/src/sql/hsqldb-2_
+
+## Congratulations ##
+Congratulations! You have successfully installed and prepared the _openMDX SDK 2.9_ projects.

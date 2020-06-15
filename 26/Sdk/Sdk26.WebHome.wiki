@@ -1,0 +1,13 @@
+= Welcome to openMDX SDK 2.6 =
+
+== [wiki:Sdk26.StepByStepAnt openMDX SDK 2.6 for Ant Step-by-Step Guide] ==
+This guide explains how to install and setup openMDX SDK 2.6 for Ant.
+
+== [wiki:Sdk26.StepByStepEclipse openMDX SDK 2.6 for Eclipse Step-by-Step Guide] ==
+This guide explains how to prepare openMDX SDK 2.6 for Eclipse.
+
+== [wiki:Sdk26.StepByStepTomcat openMDX SDK 2.6 for Tomcat + OpenEJB Step-by-Step Guide] ==
+This guide explains how to install, setup and deploy openMDX SDK 2.6 on Tomcat + OpenEJB.
+
+== [wiki:Sdk26.DeployOnJBoss openMDX SDK 2.6 Deploy on JBoss Guide] ==
+This guide explains how to deploy the openMDX examples on JBoss.

@@ -1,0 +1,13 @@
+# Welcome to openMDX SDK 2.14 #
+
+## [openMDX SDK for Ant Step-by-Step Guide](Sdk214.StepByStepAnt) ##
+This guide explains how to install and setup openMDX SDK for Ant.
+
+## [openMDX SDK for Eclipse Step-by-Step Guide](Sdk214.StepByStepEclipse) ##
+This guide explains how to prepare openMDX SDK for Eclipse.
+
+## [openMDX SDK Examples](Sdk214.Examples) ##
+This guide explains how to install and build the openMDX Examples.
+
+## [openMDX Workshop Project](Sdk214.Workshop) ##
+This guide explains in detail the _openMDX Workshop_ project.

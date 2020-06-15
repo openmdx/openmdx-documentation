@@ -1,0 +1,2191 @@
+Buildfile: /tmp/SF/2.8/openmdxSdk-2.8.0/bin/postinstaller.xml
+
+postinstall:
+
+expand-tar:
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-2.8.0-core.jre-1.6.tar into /tmp/SF/2.8/openmdxSdk-2.8.0
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-2.8.0-portal.jre-1.6.tar into /tmp/SF/2.8/openmdxSdk-2.8.0
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-2.8.0-security.jre-1.6.tar into /tmp/SF/2.8/openmdxSdk-2.8.0
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-2.8.0-test-core.jre-1.6.tar into /tmp/SF/2.8/openmdxSdk-2.8.0
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-2.8.0-openejb.openejb-3.tar into /tmp/SF/2.8/openmdxSdk-2.8.0
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-example-2.8.0-helloworld.jre-1.6.tar into /tmp/SF/2.8/openmdxSdk-2.8.0
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-example-2.8.0-workshop.jre-1.6.tar into /tmp/SF/2.8/openmdxSdk-2.8.0
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-2.8.0-core.jre-1.6.tar into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-2.8.0-portal.jre-1.6.tar into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-2.8.0-security.jre-1.6.tar into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt
+    [untar] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/repository/distribution/openmdx-2.8.0-openejb.openejb-3.tar into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt
+
+init:
+
+install-model:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.emf-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.emf-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.magicdraw-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/magicdraw...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/magicdraw
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.magicdraw-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/magicdraw
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.poseidon-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/poseidon...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/poseidon
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.poseidon-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/poseidon
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.rose-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/rose...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/rose
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.rose-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/rose
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/rsm...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/rsm
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/rsm
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-profiles-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/rsm-profiles...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/rsm-profiles
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-profiles-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/rsm-profiles
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.together-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/together...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/together
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.together-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/together
+
+install-data:
+
+install-sql:
+
+install-connector:
+
+eclipse-src-project:
+
+install-war:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.war.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/war...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/war
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.war.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/war
+
+install-ear:
+
+install-src:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.java.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/java...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.java.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/java
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.jt.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/jt...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/jt
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.jt.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/jt
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.resource.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/resource...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/resource
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core/openmdx-core.resource.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/resource
+
+init:
+
+-ant-init:
+
+deliverables-init:
+    [touch] Creating /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/unix.distribution
+
+build-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/bin
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/doc/api
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/lib
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/module
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/resource
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/sql
+
+bootstrap:
+
+-preprocess-version-files-:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/java
+
+-version-file-init-:
+
+-version-file-:
+     [echo] Preprocessing Version file: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/java/org/openmdx/kernel/Version.java
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/java/org/openmdx/kernel
+
+-version-file-init-:
+
+-version-file-:
+     [echo] Preprocessing Version file: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/java/org/openmdx/base/Version.java
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/java/org/openmdx/base
+
+-version-file-init-:
+
+-version-file-:
+     [echo] Preprocessing Version file: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/java/org/openmdx/application/Version.java
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/java/org/openmdx/application
+
+-preprocess-jt-init:
+
+-preprocess-jt-files-:
+     [echo] Preprocessing Java Templates: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/jt
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/log/gcc
+     [copy] Copied 8 empty directories to 5 empty directories under /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/java
+    [javac] Compiling 540 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/bin
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+generate-ant:
+
+generate:
+
+-preprocess-model-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/log/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/jsl
+
+-preprocess-rose-models:
+
+-preprocess-poseidon-models:
+
+-preprocess-magicdraw-models:
+
+-preprocess-together-models:
+
+-preprocess-rsm-models:
+
+-preprocess-emf-models:
+     [echo] Transforming EMF models /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/src/uml/models.uml to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model/models.zip...
+     [echo] 
+     [echo] Externalizing EMF models to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model/models.zip ...
+     [java] Dec 28, 2010 12:17:22 PM org.openmdx.application.dataprovider.spi.Layer_1 activate
+     [java] INFO: Sys|openMDX Kernel|2.8.0
+     [java] INFO:    Eclipse UML2 Tools
+     [java] INFO:    pathMap={${thirdparty.model.name}=file:${thirdparty.model.home}, openMDX 2 ~ Security (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/emf/, openMDX 2 ~ Core (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/}
+     [java] INFO:    Parsing url=file:src/model/emf/models.uml
+     [java] INFO:    XMI version=2.1; name=model
+     [java] INFO:    Parsing url=file:src/model/emf/org.ietf.uml
+     [java] INFO:    XMI version=2.1; name=ietf
+     [java] INFO:    Parsing url=file:src/model/emf/org.iso.uml
+     [java] INFO:    XMI version=2.1; name=iso
+     [java] INFO:    Parsing url=file:src/model/emf/org.oasis-open.uml
+     [java] INFO:    XMI version=2.1; name=oasis-open
+     [java] INFO:    Parsing url=file:src/model/emf/org.un.uml
+     [java] INFO:    XMI version=2.1; name=un
+     [java] INFO:    Parsing url=file:src/model/emf/net.rfc.uml
+     [java] INFO:    XMI version=2.1; name=rfc
+     [java] INFO:    Parsing url=file:src/model/emf/org.w3c.uml
+     [java] INFO:    XMI version=2.1; name=w3c
+     [java] INFO:    Parsing url=file:src/model/emf/org.omg.PrimitiveTypes.uml
+     [java] INFO:    XMI version=2.1; name=PrimitiveTypes
+     [java] INFO:    Parsing url=file:src/model/emf/org.omg.model1.uml
+     [java] INFO:    XMI version=2.1; name=model1
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.audit2.uml
+     [java] INFO:    XMI version=2.1; name=audit2
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.base.uml
+     [java] INFO:    XMI version=2.1; name=base
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.compatibility.audit1.uml
+     [java] INFO:    XMI version=2.1; name=audit1
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.generic1.uml
+     [java] INFO:    XMI version=2.1; name=generic1
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.preferences1.uml
+     [java] INFO:    XMI version=2.1; name=preferences1
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.role2.uml
+     [java] INFO:    XMI version=2.1; name=role2
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.state2.uml
+     [java] INFO:    XMI version=2.1; name=state2
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Creatable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Removable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Authority
+     [java] INFO:    Column meta data found for field Authority.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Modifiable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Provider
+     [java] INFO:    Column meta data found for field Provider.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.preferences1.jpa3.Segment
+     [java] INFO:    Loading meta data for org.openmdx.audit2.jpa3.Involvement
+     [java] INFO:    Loading meta data for org.openmdx.state2.jpa3.StateCapable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Creatable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Removable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Authority
+     [java] INFO:    Column meta data found for field Authority.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Modifiable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Provider
+     [java] INFO:    Column meta data found for field Provider.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.preferences1.jpa3.Segment
+     [java] INFO:    Loading meta data for org.openmdx.audit2.jpa3.Involvement
+     [java] INFO:    Loading meta data for org.openmdx.state2.jpa3.StateCapable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Creatable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Removable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Authority
+     [java] INFO:    Column meta data found for field Authority.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Provider
+     [java] INFO:    Column meta data found for field Provider.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Modifiable
+     [java] INFO:    Loading meta data for org.openmdx.preferences1.jpa3.Segment
+     [java] INFO:    Loading meta data for org.openmdx.audit2.jpa3.Involvement
+     [java] INFO:    Loading meta data for org.openmdx.state2.jpa3.StateCapable
+
+-preprocess-model-files-:
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/src/resource
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model/openmdx-core.together-model.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model/openmdx-core.poseidon-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model/openmdx-core.magicdraw-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model/openmdx-core.rsm6-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/model/openmdx-core.openmdx-xmi.zip
+      [jar] Building MANIFEST-only jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/lib/openmdx-core.rmi.jar
+
+compile-java:
+    [javac] Compiling 519 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/bin
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+
+enhance:
+
+compile-rmi:
+
+build:
+
+java-archives:
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/lib/openmdx-system.jar
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/lib/openmdx-base.jar
+[openmdx:archive] META-INF/orm.xml already added, skipping
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/lib/tomcat-juli.jar
+
+web-archives:
+
+source-archives:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/src/openmdx-core.java.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/src/openmdx-core.jsl.zip because no files were included.
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/src/openmdx-core.resource.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/src/openmdx-core.sql.zip because no files were included.
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+     [copy] Copying 2 files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/core
+
+deliverables:
+
+init:
+
+install-model:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.emf-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/emf...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/emf
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.emf-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/emf
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.magicdraw-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/magicdraw...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/magicdraw
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.magicdraw-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/magicdraw
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.poseidon-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/poseidon...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/poseidon
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.poseidon-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/poseidon
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.rsm-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/rsm...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/rsm
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.rsm-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/rsm
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.together-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/together...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/together
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.together-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/together
+
+install-data:
+
+install-sql:
+
+install-connector:
+
+eclipse-src-project:
+
+install-war:
+
+install-ear:
+
+install-src:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.java.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/java...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.java.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/java
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.resource.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/resource...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/resource
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security/openmdx-security.resource.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/resource
+
+init:
+
+-ant-init:
+
+deliverables-init:
+
+build-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/bin
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/doc/api
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/lib
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/module
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/src/resource
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/src/sql
+
+generate:
+
+-preprocess-model-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/log/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/src/java
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/src/jsl
+
+-preprocess-rose-models:
+
+-preprocess-poseidon-models:
+
+-preprocess-magicdraw-models:
+
+-preprocess-together-models:
+
+-preprocess-rsm-models:
+
+-preprocess-emf-models:
+     [echo] Transforming EMF models /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/emf/src/uml/models.uml to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model/models.zip...
+     [echo] 
+     [echo] Externalizing EMF models to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model/models.zip ...
+     [java] Dec 28, 2010 12:17:40 PM org.openmdx.application.dataprovider.spi.Layer_1 activate
+     [java] INFO: Sys|openMDX Kernel|2.8.0
+     [java] INFO:    Eclipse UML2 Tools
+     [java] INFO:    pathMap={${thirdparty.model.name}=file:${thirdparty.model.home}, openMDX 2 ~ Security (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/emf/, openMDX 2 ~ Core (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/}
+     [java] INFO:    Parsing url=file:src/model/emf/models.uml
+     [java] INFO:    XMI version=2.1; name=models
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.w3c.uml
+     [java] INFO:    XMI version=2.1; name=w3c
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.security.authentication1.uml
+     [java] INFO:    XMI version=2.1; name=authentication1
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.security.authorization1.uml
+     [java] INFO:    XMI version=2.1; name=authorization1
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.security.realm1.uml
+     [java] INFO:    XMI version=2.1; name=realm1
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.openmdx.base.uml
+     [java] INFO:    XMI version=2.1; name=base
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.oasis-open.uml
+     [java] INFO:    XMI version=2.1; name=oasis-open
+     [java] INFO:    Loading meta data for org.openmdx.security.authorization1.jpa3.Policy
+     [java] INFO:    Column meta data found for field Policy.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Policy.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Privilege
+     [java] INFO:    Column meta data found for field Privilege.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Privilege.policy
+     [java] INFO:    Loading meta data for org.openmdx.security.authorization1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Realm
+     [java] INFO:    Column meta data found for field Realm.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Realm.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Principal
+     [java] INFO:    Column meta data found for field Principal.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Principal.realm
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Permission
+     [java] INFO:    Column meta data found for field Permission.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Permission.realm
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Role
+     [java] INFO:    Column meta data found for field Role.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Role.policy
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.AuthenticationContext
+     [java] INFO:    Column meta data found for field AuthenticationContext.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field AuthenticationContext.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.Password
+     [java] INFO:    Column meta data found for field Password.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Password.segment
+     [java] INFO:    Column meta data found for field Password.password
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.Credential
+     [java] INFO:    Column meta data found for field Credential.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Credential.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.security.authorization1.jpa3.Policy
+     [java] INFO:    Column meta data found for field Policy.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Policy.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Privilege
+     [java] INFO:    Column meta data found for field Privilege.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Privilege.policy
+     [java] INFO:    Loading meta data for org.openmdx.security.authorization1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Realm
+     [java] INFO:    Column meta data found for field Realm.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Realm.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Principal
+     [java] INFO:    Column meta data found for field Principal.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Principal.realm
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Permission
+     [java] INFO:    Column meta data found for field Permission.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Permission.realm
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Role
+     [java] INFO:    Column meta data found for field Role.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Role.policy
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.AuthenticationContext
+     [java] INFO:    Column meta data found for field AuthenticationContext.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field AuthenticationContext.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.Password
+     [java] INFO:    Column meta data found for field Password.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Password.segment
+     [java] INFO:    Column meta data found for field Password.password
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.Credential
+     [java] INFO:    Column meta data found for field Credential.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Credential.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.security.authorization1.jpa3.Policy
+     [java] INFO:    Column meta data found for field Policy.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Policy.segment
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Modifiable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Creatable
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Privilege
+     [java] INFO:    Column meta data found for field Privilege.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Privilege.policy
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Role
+     [java] INFO:    Column meta data found for field Role.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Role.policy
+     [java] INFO:    Loading meta data for org.openmdx.security.authorization1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Realm
+     [java] INFO:    Column meta data found for field Realm.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Realm.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Principal
+     [java] INFO:    Column meta data found for field Principal.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Principal.realm
+     [java] INFO:    Loading meta data for org.openmdx.security.realm1.jpa3.Permission
+     [java] INFO:    Column meta data found for field Permission.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Permission.realm
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.AuthenticationContext
+     [java] INFO:    Column meta data found for field AuthenticationContext.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field AuthenticationContext.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.Password
+     [java] INFO:    Column meta data found for field Password.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Password.segment
+     [java] INFO:    Column meta data found for field Password.password
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.Credential
+     [java] INFO:    Column meta data found for field Credential.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Credential.segment
+     [java] INFO:    Loading meta data for org.openmdx.security.authentication1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+
+-preprocess-model-files-:
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/src/resource
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model/openmdx-security.together-model.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model/openmdx-security.poseidon-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model/openmdx-security.magicdraw-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model/openmdx-security.rsm6-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/model/openmdx-security.openmdx-xmi.zip
+
+compile-java:
+    [javac] Compiling 243 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/build/jre-1.6/bin
+
+enhance:
+
+compile-rmi:
+
+build:
+
+java-archive-ldap:
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/lib/openmdx-ldap.jar
+
+java-archives:
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/lib/openmdx-security.jar
+[openmdx:archive] META-INF/orm.xml already added, skipping
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/lib/openmdx-resource.jar
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/lib/openmdx-radius.jar
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/lib/openmdx-pki.jar
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/lib/openmdx-authentication.jar
+
+source-archives:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/src/openmdx-security.java.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/src/openmdx-security.jsl.zip because no files were included.
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/src/openmdx-security.resource.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/security/src/openmdx-security.sql.zip because no files were included.
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+     [copy] Copying 2 files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/security
+
+deliverables:
+
+init:
+
+install-model:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.emf-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/emf...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/emf
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.emf-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/emf
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.magicdraw-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/magicdraw...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/magicdraw
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.magicdraw-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/magicdraw
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.poseidon-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/poseidon...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/poseidon
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.poseidon-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/poseidon
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.rsm-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/rsm...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/rsm
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.rsm-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/rsm
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.together-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/together...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/together
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.together-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/together
+
+install-data:
+
+install-sql:
+
+install-connector:
+
+eclipse-src-project:
+
+install-war:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.war.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/war...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/war
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.war.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/war
+
+install-ear:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.ear.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/ear...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/ear
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.ear.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/ear
+
+install-src:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.java.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/java...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.java.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/java
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.js.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/js...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/js
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.js.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/js
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.resource.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/resource...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/resource
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.resource.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/resource
+
+init:
+
+-ant-init:
+
+deliverables-init:
+
+build-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/bin
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/doc/api
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/lib
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/module
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/src/resource
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/src/sql
+
+generate:
+
+-preprocess-model-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/log/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/src/java
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/src/jsl
+
+-preprocess-rose-models:
+
+-preprocess-poseidon-models:
+
+-preprocess-magicdraw-models:
+
+-preprocess-together-models:
+
+-preprocess-rsm-models:
+
+-preprocess-emf-models:
+     [echo] Transforming EMF models /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/model/emf/src/uml/models.uml to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model/models.zip...
+     [echo] 
+     [echo] Externalizing EMF models to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model/models.zip ...
+     [java] Dec 28, 2010 12:17:52 PM org.openmdx.application.dataprovider.spi.Layer_1 activate
+     [java] INFO: Sys|openMDX Kernel|2.8.0
+     [java] INFO:    Eclipse UML2 Tools
+     [java] INFO:    pathMap={${thirdparty.model.name}=file:${thirdparty.model.home}, openMDX 2 ~ Security (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/emf/, openMDX 2 ~ Core (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/}
+     [java] INFO:    Parsing url=file:src/model/emf/models.uml
+     [java] INFO:    XMI version=2.1; name=models
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.w3c.uml
+     [java] INFO:    XMI version=2.1; name=w3c
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.oasis-open.uml
+     [java] INFO:    XMI version=2.1; name=oasis-open
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.openmdx.base.uml
+     [java] INFO:    XMI version=2.1; name=base
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.ui1.uml
+     [java] INFO:    XMI version=2.1; name=ui1
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.iso.uml
+     [java] INFO:    XMI version=2.1; name=iso
+     [java] INFO:    Loading meta data for org.openmdx.ui1.jpa3.Segment
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.ui1.jpa3.Segment
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Modifiable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Creatable
+     [java] INFO:    Loading meta data for org.openmdx.ui1.jpa3.Segment
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+
+-preprocess-model-files-:
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/src/resource
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model/openmdx-portal.together-model.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model/openmdx-portal.poseidon-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model/openmdx-portal.magicdraw-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model/openmdx-portal.rsm6-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/model/openmdx-portal.openmdx-xmi.zip
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/src/js
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+
+-compress-and-append-:
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/war/openmdx-inspector.war/javascript
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/war/openmdx-inspector.war/javascript
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/src/war/openmdx-inspector.war/javascript
+
+compile-java:
+    [javac] Compiling 349 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/portal/build/jre-1.6/bin
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+enhance:
+
+compile-rmi:
+
+build:
+
+java-archives:
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/portal/lib/openmdx-portal.jar
+[openmdx:archive] META-INF/orm.xml already added, skipping
+
+web-archives:
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/portal/deployment-unit/openmdx-inspector.war
+
+source-archives:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal/openmdx-portal.war.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/portal/src/openmdx-portal.java.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/portal/src/openmdx-portal.js.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/portal/src/openmdx-portal.jsl.zip because no files were included.
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/portal/src/openmdx-portal.resource.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/portal/src/openmdx-portal.sql.zip because no files were included.
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+     [copy] Copying 2 files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/portal
+
+deliverables:
+
+init:
+
+install-model:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.emf-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/emf...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/emf
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.emf-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/emf
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.magicdraw-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/magicdraw...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/magicdraw
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.magicdraw-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/magicdraw
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.poseidon-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/poseidon...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/poseidon
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.poseidon-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/poseidon
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.rsm-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/rsm...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/rsm
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.rsm-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/rsm
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.together-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/together...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/together
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.together-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/together
+
+install-data:
+
+install-sql:
+
+install-connector:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.openmdx-xa-connector.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/connector/openmdx-xa...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/connector/openmdx-xa
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.openmdx-xa-connector.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/connector/openmdx-xa
+
+eclipse-src-project:
+
+install-war:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.war.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/war...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/war
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.war.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/war
+
+install-ear:
+
+install-src:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.java.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/java...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.java.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/java
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.resource.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/resource...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/resource
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.resource.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/resource
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.sql.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/sql...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/sql
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core/openmdx-test.core.sql.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/sql
+
+init:
+
+-ant-init:
+
+deliverables-init:
+
+build-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/bin
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/doc/api
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/lib
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/module
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/src/resource
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/src/sql
+
+generate:
+
+init:
+
+-ant-init:
+
+deliverables-init:
+
+build-init:
+
+bootstrap:
+
+-preprocess-version-files-:
+
+-version-file-init-:
+
+-version-file-:
+
+-version-file-init-:
+
+-version-file-:
+
+-version-file-init-:
+
+-version-file-:
+
+-preprocess-jt-init:
+
+-preprocess-jt-files-:
+    [javac] Compiling 3 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/bin
+
+generate-ant:
+
+generate:
+
+-preprocess-model-init:
+
+-preprocess-rose-models:
+
+-preprocess-poseidon-models:
+
+-preprocess-magicdraw-models:
+
+-preprocess-together-models:
+
+-preprocess-rsm-models:
+
+-preprocess-emf-models:
+
+-preprocess-model-files-:
+
+compile-java:
+    [javac] Compiling 3 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/build/jre-1.6/bin
+
+enhance:
+
+compile-rmi:
+
+build:
+
+java-archives:
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/lib/openmdx-base.jar
+[openmdx:archive] META-INF/orm.xml already added, skipping
+
+web-archives:
+
+source-archives:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/src/openmdx-core.jsl.zip because no files were included.
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/core/src/openmdx-core.sql.zip because no files were included.
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+deliverables:
+
+-preprocess-model-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/log/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/src/java
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/src/jsl
+
+-preprocess-rose-models:
+
+-preprocess-poseidon-models:
+
+-preprocess-magicdraw-models:
+
+-preprocess-together-models:
+
+-preprocess-rsm-models:
+
+-preprocess-emf-models:
+     [echo] Transforming EMF models /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/model/emf/src/uml/models.uml to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model/models.zip...
+     [echo] 
+     [echo] Externalizing EMF models to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model/models.zip ...
+     [java] Dec 28, 2010 12:18:25 PM org.openmdx.application.dataprovider.spi.Layer_1 activate
+     [java] INFO: Sys|openMDX Kernel|2.8.0
+     [java] INFO:    Eclipse UML2 Tools
+     [java] INFO:    pathMap={${thirdparty.model.name}=file:${thirdparty.model.home}, openMDX 2 ~ Security (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/security/src/model/emf/, openMDX 2 ~ Core (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/}
+     [java] INFO:    Parsing url=file:src/model/emf/models.uml
+     [java] INFO:    XMI version=2.1; name=models
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.w3c.uml
+     [java] INFO:    XMI version=2.1; name=w3c
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.oasis-open.uml
+     [java] INFO:    XMI version=2.1; name=oasis-open
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.openmdx.base.uml
+     [java] INFO:    XMI version=2.1; name=base
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.openmdx.generic1.uml
+     [java] INFO:    XMI version=2.1; name=generic1
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/core/src/model/emf/org.openmdx.state2.uml
+     [java] INFO:    XMI version=2.1; name=state2
+     [java] INFO:    Parsing url=file:src/model/emf/test.openmdx.app1.uml
+     [java] INFO:    XMI version=2.1; name=test-app1
+     [java] INFO:    Parsing url=file:src/model/emf/test.openmdx.base.uml
+     [java] INFO:    XMI version=2.1; name=test-base
+     [java] INFO:    Parsing url=file:src/model/emf/test.openmdx.clock1.uml
+     [java] INFO:    XMI version=2.1; name=test-clock1
+     [java] INFO:    Parsing url=file:src/model/emf/test.openmdx.datatypes1.uml
+     [java] INFO:    XMI version=2.1; name=test-datataypes1
+     [java] INFO:    Parsing url=file:src/model/emf/test.openmdx.model1.uml
+     [java] INFO:    XMI version=2.1; name=test-model1
+     [java] INFO:    Parsing url=file:src/model/emf/test.openmdx.state2.uml
+     [java] INFO:    XMI version=2.1; name=test-state2
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Modifiable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Creatable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Removable
+     [java] INFO:    Loading meta data for org.openmdx.state2.jpa3.StateCapable
+
+-preprocess-model-files-:
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/src/resource
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model/openmdx-test.core.together-model.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model/openmdx-test.core.poseidon-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model/openmdx-test.core.magicdraw-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model/openmdx-test.core.rsm6-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/model/openmdx-test.core.openmdx-xmi.zip
+
+compile-java:
+    [javac] Compiling 1262 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/build/jre-1.6/bin
+    [javac] Note: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/test-core/src/java/test/openmdx/application/rest/http/ServletPort.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+enhance:
+
+compile-rmi:
+
+build:
+
+source-archives:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/test-core/src/openmdx-test.core.java.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/test-core/src/openmdx-test.core.jsl.zip because no files were included.
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/test-core/src/openmdx-test.core.resource.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/jre-1.6/test-core/src/openmdx-test.core.sql.zip because no files were included.
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+     [copy] Copying 2 files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/test-core
+
+deliverables:
+
+init:
+
+install-model:
+
+install-data:
+
+install-sql:
+
+install-connector:
+
+eclipse-src-project:
+
+install-war:
+
+install-ear:
+
+install-src:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/openejb/openmdx-openejb.java.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/src/java...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/openejb/openmdx-openejb.java.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/src/java
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/openejb/openmdx-openejb.resource.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/src/resource...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/src/resource
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/source-archive/openejb/openmdx-openejb.resource.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/src/resource
+
+init:
+
+-ant-init:
+
+deliverables-init:
+
+build-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/build/openejb-3/bin
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/build/openejb-3/doc/api
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/build/openejb-3/lib
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/build/openejb-3/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/build/openejb-3/module
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/build/openejb-3/src/resource
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/build/openejb-3/src/sql
+
+generate:
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/apache/jre-1.6/openejb/war/openejb.war into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/build/openejb-3/module/openejb.war
+
+compile-java:
+     [echo] JAVAC:standard
+    [javac] Compiling 5 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/build/openejb-3/bin
+    [javac] Note: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb/src/java/org/apache/openejb/tomcat/catalina/TomcatWebAppBuilder.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+
+enhance:
+
+compile-rmi:
+
+build:
+
+java-archives:
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb-3/openejb/lib/openejb-tomcat-catalina-3.1.2.jar
+[openmdx:archive] org/apache/openejb/tomcat/catalina/TomcatWebAppBuilder$1.class already added, skipping
+[openmdx:archive] org/apache/openejb/tomcat/catalina/TomcatWebAppBuilder$ContextInfo.class already added, skipping
+[openmdx:archive] org/apache/openejb/tomcat/catalina/TomcatWebAppBuilder$DeployedApplication.class already added, skipping
+[openmdx:archive] org/apache/openejb/tomcat/catalina/TomcatWebAppBuilder.class already added, skipping
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb-3/openejb/lib/catalina.jar
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb-3/openejb/lib/openmdx-openejb.jar
+
+source-archives:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb-3/openejb/src/openmdx-openejb.resource.zip because no files were included.
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-2.8.0/openejb-3/openejb/src/openmdx-openejb.sql.zip because no files were included.
+
+deliverables:
+
+init:
+
+install-model:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.emf-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/emf...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/emf
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.emf-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/emf
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.magicdraw-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/magicdraw...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/magicdraw
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.magicdraw-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/magicdraw
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.poseidon-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/poseidon...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/poseidon
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.poseidon-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/poseidon
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.rsm-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/rsm...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/rsm
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.rsm-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/rsm
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.together-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/together...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/together
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.together-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/together
+
+install-data:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.org.openmdx.example-data.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/data/org.openmdx.example...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/data/org.openmdx.example
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.org.openmdx.example-data.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/data/org.openmdx.example
+
+install-sql:
+
+install-connector:
+
+eclipse-src-project:
+
+install-war:
+
+install-ear:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.ear.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/ear...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/ear
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.ear.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/ear
+
+install-src:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.java.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/java...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.java.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/java
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.resource.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/resource...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/resource
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld/openmdx-example-helloworld.resource.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/resource
+
+init:
+
+-ant-init:
+
+deliverables-init:
+
+build-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/bin
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/doc/api
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/lib
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/module
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/src/resource
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/src/sql
+
+generate:
+
+init:
+
+prepare:
+
+init:
+
+install-model:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.emf-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.emf-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.magicdraw-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/magicdraw...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/magicdraw
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.magicdraw-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/magicdraw
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.poseidon-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/poseidon...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/poseidon
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.poseidon-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/poseidon
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rose-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rose...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rose
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rose-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rose
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-profiles-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm-profiles...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm-profiles
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-profiles-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm-profiles
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.together-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/together...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/together
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.together-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/together
+
+install-sql:
+
+install-ear:
+
+install-war:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.war.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/war...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/war
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.war.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/war
+
+install-source-archive:
+
+-src-for-platform-:
+
+-init-platform:
+
+-src-for-platform:
+
+-src-for-jar-:
+
+-src-for-jar:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/jre-1.6/core/src/openmdx-base.java.zip
+
+-src-for-jar-:
+
+-src-for-jar-:
+
+eclipse-bin-project:
+
+install-bin:
+
+-preprocess-model-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/log/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/src/java
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/src/jsl
+
+-preprocess-rose-models:
+
+-preprocess-poseidon-models:
+
+-preprocess-magicdraw-models:
+
+-preprocess-together-models:
+
+-preprocess-rsm-models:
+
+-preprocess-emf-models:
+     [echo] Transforming EMF models /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/src/model/emf/src/uml/models.uml to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model/models.zip...
+     [echo] 
+     [echo] Externalizing EMF models to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model/models.zip ...
+     [java] Dec 28, 2010 12:18:57 PM org.openmdx.application.dataprovider.spi.Layer_1 activate
+     [java] INFO: Sys|openMDX Kernel|2.8.0
+     [java] INFO:    Eclipse UML2 Tools
+     [java] INFO:    pathMap={${thirdparty.model.name}=file:${thirdparty.model.home}, openMDX 2 ~ Security (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/security/src/model/emf/, openMDX 2 ~ Core (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf/}
+     [java] INFO:    Parsing url=file:src/model/emf/models.uml
+     [java] INFO:    XMI version=2.1; name=models
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf/org.w3c.uml
+     [java] INFO:    XMI version=2.1; name=w3c
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf/org.oasis-open.uml
+     [java] INFO:    XMI version=2.1; name=oasis-open
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf/org.openmdx.base.uml
+     [java] INFO:    XMI version=2.1; name=base
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.example.helloworld1.uml
+     [java] INFO:    XMI version=2.1; name=org
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+
+-preprocess-model-files-:
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/src/resource
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model/openmdx-example-helloworld.together-model.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model/openmdx-example-helloworld.poseidon-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model/openmdx-example-helloworld.magicdraw-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model/openmdx-example-helloworld.rsm6-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/model/openmdx-example-helloworld.openmdx-xmi.zip
+
+compile-java:
+    [javac] Compiling 18 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/bin
+
+enhance:
+
+compile-rmi:
+
+build:
+
+java-archives:
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/helloworld/lib/openmdx-helloworld.jar
+[openmdx:archive] META-INF/orm.xml already added, skipping
+
+source-archives:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/helloworld/src/openmdx-example-helloworld.java.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/helloworld/src/openmdx-example-helloworld.jsl.zip because no files were included.
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/helloworld/src/openmdx-example-helloworld.resource.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/helloworld/src/openmdx-example-helloworld.sql.zip because no files were included.
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+     [copy] Copying 2 files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/helloworld
+
+deliverables:
+
+init:
+
+build-init:
+
+-openmdx-helloworld.ear-:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/tmp
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/tmp/lib
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/helloworld/build/jre-1.6/module/openmdx-helloworld.war
+[openmdx:archive] images/logoLeft.gif already added, skipping
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/helloworld/deployment-unit/openmdx-helloworld.ear
+
+assemble:
+
+init:
+
+install-model:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.emf-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/emf...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/emf
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.emf-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/emf
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.magicdraw-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/magicdraw...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/magicdraw
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.magicdraw-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/magicdraw
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.poseidon-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/poseidon...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/poseidon
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.poseidon-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/poseidon
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.rsm-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/rsm...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/rsm
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.rsm-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/rsm
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.together-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/together...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/together
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.together-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/together
+
+install-data:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.org.openmdx.example.workshop-data.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/data/org.openmdx.example.workshop...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/data/org.openmdx.example.workshop
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.org.openmdx.example.workshop-data.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/data/org.openmdx.example.workshop
+
+install-sql:
+
+install-connector:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.openejb-3-connector.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/connector/openejb-3...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/connector/openejb-3
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.openejb-3-connector.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/connector/openejb-3
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.openmdx-2-connector.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/connector/openmdx-2...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/connector/openmdx-2
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.openmdx-2-connector.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/connector/openmdx-2
+
+eclipse-src-project:
+
+install-war:
+
+install-ear:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.ear.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/ear...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/ear
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.ear.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/ear
+
+install-src:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.java.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/java...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.java.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/java
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.resource.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/resource...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/resource
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.resource.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/resource
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.sql.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/sql...
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/sql
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop/openmdx-workshop.sql.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/sql
+
+init:
+
+-ant-init:
+
+deliverables-init:
+
+build-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/bin
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/doc/api
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/lib
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/module
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/src/resource
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/src/sql
+
+generate:
+
+init:
+
+prepare:
+
+init:
+
+install-model:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.emf-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf...
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.emf-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.magicdraw-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/magicdraw...
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.magicdraw-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/magicdraw
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.poseidon-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/poseidon...
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.poseidon-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/poseidon
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rose-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rose...
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rose-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rose
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm...
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-profiles-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm-profiles...
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.rsm-profiles-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/rsm-profiles
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.together-model.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/together...
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.together-model.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/together
+
+install-sql:
+
+install-ear:
+
+install-war:
+
+init:
+
+-install-:
+     [echo] Installing /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.war.zip to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/war...
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/source-archive/core/openmdx-core.war.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/war
+
+install-source-archive:
+
+-src-for-platform-:
+
+-init-platform:
+
+-src-for-platform:
+
+-src-for-jar-:
+
+-src-for-jar:
+
+-src-for-jar-:
+
+-src-for-jar-:
+
+eclipse-bin-project:
+
+install-bin:
+
+-preprocess-model-init:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/log/model
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/src/java
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/src/jsl
+
+-preprocess-rose-models:
+
+-preprocess-poseidon-models:
+
+-preprocess-magicdraw-models:
+
+-preprocess-together-models:
+
+-preprocess-rsm-models:
+
+-preprocess-emf-models:
+     [echo] Transforming EMF models /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/model/emf/src/uml/models.uml to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model/models.zip...
+     [echo] 
+     [echo] Externalizing EMF models to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model/models.zip ...
+     [java] Dec 28, 2010 12:19:07 PM org.openmdx.application.dataprovider.spi.Layer_1 activate
+     [java] INFO: Sys|openMDX Kernel|2.8.0
+     [java] INFO:    Eclipse UML2 Tools
+     [java] INFO:    pathMap={${thirdparty.model.name}=file:${thirdparty.model.home}, openMDX 2 ~ Security (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/security/src/model/emf/, openMDX 2 ~ Core (EMF)=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf/}
+     [java] INFO:    Parsing url=file:src/model/emf/models.uml
+     [java] INFO:    XMI version=2.1; name=models
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf/org.w3c.uml
+     [java] INFO:    XMI version=2.1; name=w3c
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf/org.oasis-open.uml
+     [java] INFO:    XMI version=2.1; name=oasis-open
+     [java] INFO:    Parsing url=file:/tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/opt/openmdx-2.8.0/core/src/model/emf/org.openmdx.base.uml
+     [java] INFO:    XMI version=2.1; name=base
+     [java] INFO:    Parsing url=file:src/model/emf/org.openmdx.example.workshop1.uml
+     [java] INFO:    XMI version=2.1; name=org.openmdx.example.workshop1
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Project
+     [java] INFO:    Column meta data found for field Project.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Project.segment
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Task
+     [java] INFO:    Column meta data found for field Task.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Task.project
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.TeamMember
+     [java] INFO:    Column meta data found for field TeamMember.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field TeamMember.segment
+     [java] INFO:    Join meta data found for field TeamMember.task
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.TeamMemberAssignment
+     [java] INFO:    Column meta data found for field TeamMemberAssignment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field TeamMemberAssignment.task
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Skill
+     [java] INFO:    Column meta data found for field Skill.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Skill.segment
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Project
+     [java] INFO:    Column meta data found for field Project.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Project.segment
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Task
+     [java] INFO:    Column meta data found for field Task.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Task.project
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.TeamMember
+     [java] INFO:    Column meta data found for field TeamMember.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field TeamMember.segment
+     [java] INFO:    Join meta data found for field TeamMember.task
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.TeamMemberAssignment
+     [java] INFO:    Column meta data found for field TeamMemberAssignment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field TeamMemberAssignment.task
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Skill
+     [java] INFO:    Column meta data found for field Skill.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Skill.segment
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Project
+     [java] INFO:    Column meta data found for field Project.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Project.segment
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.TeamMember
+     [java] INFO:    Column meta data found for field TeamMember.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field TeamMember.segment
+     [java] INFO:    Join meta data found for field TeamMember.task
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Modifiable
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Creatable
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Task
+     [java] INFO:    Column meta data found for field Task.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Task.project
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.TeamMemberAssignment
+     [java] INFO:    Column meta data found for field TeamMemberAssignment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field TeamMemberAssignment.task
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Skill
+     [java] INFO:    Column meta data found for field Skill.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Skill.segment
+     [java] INFO:    Loading meta data for org.openmdx.example.workshop1.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Loading meta data for org.openmdx.base.jpa3.Segment
+     [java] INFO:    Column meta data found for field Segment.openmdxjdoIdentity
+     [java] INFO:    Column meta data found for field Segment.provider
+
+-preprocess-model-files-:
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/src/java
+    [unzip] Expanding: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model/models.zip into /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/src/resource
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model/openmdx-workshop.together-model.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model/openmdx-workshop.poseidon-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model/openmdx-workshop.magicdraw-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model/openmdx-workshop.rsm6-xmi.zip
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/model/openmdx-workshop.openmdx-xmi.zip
+
+compile-java:
+    [javac] Compiling 59 source files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/bin
+    [javac] Note: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/src/java/org/openmdx/example/workshop1/aop2/TaskImpl.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+enhance:
+
+compile-rmi:
+
+build:
+
+java-archives:
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/workshop/lib/openmdx-workshop.jar
+[openmdx:archive] META-INF/orm.xml already added, skipping
+
+source-archives:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/workshop/src/openmdx-workshop.java.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/workshop/src/openmdx-workshop.jsl.zip because no files were included.
+
+init:
+
+-deliverable-:
+[openmdx:archive] Building zip: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/workshop/src/openmdx-workshop.resource.zip
+
+init:
+
+-deliverable-:
+[openmdx:archive] Warning: skipping zip archive /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/workshop/src/openmdx-workshop.sql.zip because no files were included.
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+
+init:
+
+-deliverable-:
+     [copy] Copying 2 files to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop
+     [copy] Copying 1 file to /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/source-archive/workshop
+
+deliverables:
+
+init:
+
+build-init:
+
+-openmdx-workshop.ear-:
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/tmp
+    [mkdir] Created dir: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/tmp/lib
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/workshop/build/jre-1.6/module/openmdx-workshop.war
+[openmdx:archive] images/logoLeft.gif already added, skipping
+[openmdx:archive] Building jar: /tmp/SF/2.8/openmdxSdk-2.8.0/openmdx-example-2.8.0/jre-1.6/workshop/deployment-unit/openmdx-workshop.ear
+
+assemble:
+
+BUILD SUCCESSFUL
+Total time: 2 minutes 3 seconds

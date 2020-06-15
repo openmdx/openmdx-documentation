@@ -1,0 +1,146 @@
+= 1 openMDX SDK 2.1 for ''Tomcat+LWC'' Step-by-Step Guide =
+
+This guide explains how to install, setup and deploy the examples of ''openMDX SDK 2.1'' on ''Tomcat+LWC''.
+
+''Tomcat+LWC'' is ''Apache Tomcat 6'' extended by the ''openMDX'' Lightweight Container for EJBs. The extended engine deploys web modules on ''Tomcat 6'' and the ''EJB'' modules on the ''openMDX'' Lightweight Container. Compared to a fully-fledged ''J2EE'' Application Server, ''Tomcat+LWC'' offers very simple setup, high performance and very low resource consumption. On the other hand ''Tomcat+LWC'' does not implement all features which are required for a ''J2EE'' compliant application server. We use ''Tomcat+LWC'' in this guide. However, if you prefer you can deploy the applications also on any other ''J2EE'' Application Server.
+
+'''IMPORTANT:''' This guide assumes that the ''openMDX SDK 2.1'' projects are successfully setup as described in [wiki:Sdk21.StepByStepAnt openMDX SDK 2.1 for Ant Step-by-Step].
+
+= 1.1 Download =
+
+First, download the installer executables from [https://sourceforge.net/project/showfiles.php?group_id=75132 here]:
+ * ''openmdxTomcatLwc-2.1.0-windows-installer.exe'' for ''Windows''
+ * ''openmdxTomcatLwc-2.1.0-linux-installer.bin'' for ''Linux''
+
+Before starting the installer make sure that you have installed [http://java.sun.com/javase/downloads/index_jdk5.jsp JDK 1.5], [http://ant.apache.org/bindownload.cgi Apache Ant 1.7] and [http://www.7-zip.org/ 7-Zip] (required for ''Windows'' platforms only).
+
+The installer first takes you to the welcome screen.
+
+[[Image(Sdk21.StepByStepTomcat.pic010.gif)]]
+
+On the next screen specify the installation directory. In this guide we will use the directory ''c:\temp\SF\openmdxTomcatLwc-2.1.0''.
+
+[[Image(Sdk21.StepByStepTomcat.pic020.gif)]]
+
+Specify the ''JDK 1.5'' home directory. You '''MUST''' specify the home directory of a full ''JDK 1.5'' installation. A '''JRE installation is NOT sufficient'''!
+
+[[Image(Sdk21.StepByStepTomcat.pic030.gif)]]
+
+On the next screen specify the port of the ''Tomcat HTTP transport''. ''9080'' should do it for most situations. Specify a different port if you already have a service running on this port.
+
+[[Image(Sdk21.StepByStepTomcat.pic040.gif)]]
+
+At the end of the installation the installer executes a post-installation script. If everything goes well the log should look as shown below:
+
+[[Image(Sdk21.StepByStepTomcat.pic050.gif)]]
+
+The installer creates shortcuts to start and stop ''Tomcat+LWC'' and an ''URL'' shortcut which launches the ''Tomcat+LWC'' welcome page. Start ''Tomcat+LWC'' now.
+
+[[Image(Sdk21.StepByStepTomcat.pic060.gif)]]
+
+The console output should look as shown below.
+
+'''HINT:''' on ''Linux'' systems it might be necessary to modify the shortcut so that it launches the application in a terminal window.
+
+[[Image(Sdk21.StepByStepTomcat.pic070.gif)]]
+
+Next try to launch the ''Tomcat+LWC'' welcome page.
+
+[[Image(Sdk21.StepByStepTomcat.pic075.gif)]]
+
+The welcome page looks as shown below.
+
+[[Image(Sdk21.StepByStepTomcat.pic076.gif)]]
+
+Finally stop ''Tomcat+LWC''. We will need it again in a minute, but first we have to build and deploy the example applications.
+
+[[Image(Sdk21.StepByStepTomcat.pic080.gif)]]
+
+Next, open a shell and go to the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\helloworld''. Run the command ''ant assemble''. This builds the ''EARs'' which we will deploy on ''Tomcat+LWC''. The console output looks as shown below.
+
+[[Image(Sdk21.StepByStepTomcat.pic090.gif)]]
+
+The generated ''EAR'' is located in the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\jre-1.5\helloworld\deployment-unit''. Copy the file ''openmdx-helloworld.ear'' to the directory ''.\openmdxTomcatLwc-2.1.0\apache-tomcat-6\deployment-units'' as shown below:
+
+[[Image(Sdk21.StepByStepTomcat.pic100.gif)]]
+
+Next copy the ''Tomcat'' context configuration file ''openmdx-helloworld.xml'' located in the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\helloworld\src\connector\tomcat-6'' to the directory ''.\openmdxTomcatLwc-2.1.0\apache-tomcat-6\conf\Catalina\localhost''.
+
+[[Image(Sdk21.StepByStepTomcat.pic110.gif)]]
+
+In a last step we have to add the user ''guest'' to the ''tomcat-user.xml'' which allows us to login to the ''helloworld'' application. Open the file ''.\openmdxTomcatLwc-2.1.0\apache-tomcat-6\conf\tomcat-users.xml''. Add a new entry for the user ''guest'' (if does not already exist) and add the role ''openMDXUser'' as shown below.
+
+[[Image(Sdk21.StepByStepTomcat.pic120.gif)]]
+
+Finally start ''Tomcat+LWC'' by clicking the ''Start Tomcat LWC'' shortcut. This starts ''Tomcat+LWC'' and deploys the application ''helloworld''. The console output should look as shown below.
+
+[[Image(Sdk21.StepByStepTomcat.pic130.gif)]]
+
+Next click in the ''Login Tomcat LWC'' shortcut. This launches a browser with the ''Tomcat+LWC'' main URL. Complete the URL by adding ''openmdx-helloworld''/. This opens the ''helloworld'' login page. Enter the user ''guest'' and the password which you have defined in the ''tomcat-users.xml''.
+
+[[Image(Sdk21.StepByStepTomcat.pic140.gif)]]
+
+The main page of the ''helloworld'' application is shown after successful login. The GUI of the ''helloworld'' application uses the generic ''openMDX/Portal'' GUI. The GUI is not customized, that's why labels and icons do not look very user-friendly. However, the GUI is fully workable.
+
+[[Image(Sdk21.StepByStepTomcat.pic150.gif)]]
+
+In order to test the ''sayHello()'' operation, go to the menu ''Pane:Op:90000'' and select the menu entry ''Pane:Op:Tab:sayHello'' as shown below:
+
+[[Image(Sdk21.StepByStepTomcat.pic160.gif)]]
+
+The ''sayHello()'' operation takes as parameter the language which makes ''helloworld'' to return a language-specific ''Say Hello'' text. Enter one of the languages ''de'', ''en'' or ''fr'' and click ''OK''.
+
+[[Image(Sdk21.StepByStepTomcat.pic170.gif)]]
+
+The GUI invokes the operation ''sayHello()'' which returns the ''Say Hello'' message as result which is shown below:
+
+[[Image(Sdk21.StepByStepTomcat.pic180.gif)]]
+
+Stop ''Tomcat'' by clicking on the ''Stop Tomcat LWC'' shortcut.
+
+In a next step we will build and deploy the ''workshop'' application. Go back to the shell and change to the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\workshop''. Run the command ''ant assemble''. Compare your output with this sample output [attachment:Sdk21.StepByStepTomcat.workshop-ant-assemble.log].
+
+[[Image(Sdk21.StepByStepTomcat.pic190.gif)]]
+
+Next copy the EAR ''openmdx-example-workshop.ear'' from the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\jre-1.5\workshop\deployment-unit'' to the directory ''.\openmdxTomcatLwc-2.1.0\apache-tomcat-6\deployment-units'' as shown below:
+
+[[Image(Sdk21.StepByStepTomcat.pic200.gif)]]
+
+Next copy the ''Tomcat'' context configuration file ''openmdx-example-workshop.xml'' located in the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\workshop\src\connector\tomcat-6'' to the directory ''.\openmdxTomcatLwc-2.1.0\apache-tomcat-6\conf\Catalina\localhost''.
+
+[[Image(Sdk21.StepByStepTomcat.pic210.gif)]]
+
+Because the ''workshop'' example accesses a database we have to deploy a resource adapter configuration which defines the ''workshop'' ''JDBC'' database connection. You can do this by copying the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\workshop\src\connector\openmdx-2\workshop-hsqldb-1.rar'' to the directory ''.\openmdxTomcatLwc-2.1.0\apache-tomcat-6\deployment-units'' as shown below.
+
+[[Image(Sdk21.StepByStepTomcat.pic220.gif)]]
+
+Compare the contents of your ''deployment-units'' directory with the directory structure shown below:
+
+[[Image(Sdk21.StepByStepTomcat.pic230.gif)]]
+
+Before restarting ''Tomcat+LWC'' clean the contents of the directory ''work'' and ''temp''. This makes sure that we do not deploy old files.
+
+[[Image(Sdk21.StepByStepTomcat.pic240.gif)]]
+
+Start ''Tomcat+LWC'' by clicking on the ''Start Tomcat LWC'' shortcut and compare your output with this sample output [attachment:Sdk21.StepByStepTomcat.workshop-launch-tomcat.log].
+
+[[Image(Sdk21.StepByStepTomcat.pic250.gif)]]
+
+Launch a browser, complete the URL with the suffix ''openmdx-example-workshop''/ and login as ''guest'':
+
+[[Image(Sdk21.StepByStepTomcat.pic260.gif)]]
+
+Next you should see the main page of the workshop application:
+
+[[Image(Sdk21.StepByStepTomcat.pic290.gif)]]
+
+The project comes with some basic customizing. E.g. it comes with a wizard which can be launched from the menu item ''Wizards > Create New Project...''. A wizard is a user-defined GUI extension. Wizards are a powerful and flexbile way to extend the standard ''openMDX/Portal GUI''. Wizards are implemented as standard ''JSPs'' and as such have access to the full functionality of the application's API. The source code of the wizard is located in the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\workshop\src\data\org.openmdx.example\wizards\en_US''.
+
+[[Image(Sdk21.StepByStepTomcat.pic300.gif)]]
+
+Try out the wizard. Enter values for project name, project manager and project tasks and click OK. After successful completion the wizards returns to the standard GUI which displays the newly created objects.
+
+[[Image(Sdk21.StepByStepTomcat.pic310.gif)]]
+
+= 1.1 Congratulations =
+Congratulations! You have successfully built and deployed the ''openMDX SDK 2.1'' projects on ''Tomcat+LWC''.

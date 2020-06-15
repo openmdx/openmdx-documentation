@@ -1,0 +1,97 @@
+= openMDX SDK 2.1 for ''Eclipse'' Step-by-Step Guide =
+
+This guide explains how to setup ''openMDX SDK 2.1'' for ''Eclipse''.
+
+'''IMPORTANT:''' This guide assumes that the ''openMDX SDK 2.1'' projects are successfully setup as described in the [wiki:Sdk21.StepByStepAnt openMDX SDK 2.1 for Ant Step-by-Step] and [wiki:Sdk21.StepByStepTomcat openMDX SDK 2.1 on Tomcat+LWC Step-by-Step] guides.
+
+Make sure that you have installed ''Eclipse 3.2'' or higher (download it from [http://www.eclipse.org/downloads/| here]) and the ''Sysdeo Eclipse Tomcat Launcher plugin'' (download it from [http://www.eclipsetotale.com/tomcatPlugin.html here]).
+
+After installation launch ''Eclipse''. Create a new workspace by selecting ''File > Switch Workspace > Other''. Enter the directory name of the new workspace. In this guide we will use the directory ''.\SF\eclipse\openmdx-example-workshop'' as shown below:
+
+[[Image(Sdk21.StepByStepEclipse.pic010.gif)]]
+
+''Eclipse'' will be launched with a new empty workspace.
+
+[[Image(Sdk21.StepByStepEclipse.pic020.gif)]]
+
+Close the Welcome page. Open the preferences dialog with ''Window > Preferences''. Navigate to the entry ''Java > Installed JREs''. Because the ''openMDX'' examples require a ''JDK 1.5'' we first have to add a ''JDK 1.5'' compliant ''JRE''. Click on ''Add'' and then enter ''JRE 5.0'' as ''JRE name'' and select the home directory of an installed ''JDK 1.5''. ''Eclipse'' automatically completes the other fields of the dialog as shown below:
+
+[[Image(Sdk21.StepByStepEclipse.pic030.gif)]]
+
+Select the newly added ''JRE 5.0'' as default JDK and remove any other JDKs from the list.
+
+[[Image(Sdk21.StepByStepEclipse.pic040.gif)]]
+
+Next open the entry ''Java > Compiler'' and set the compiler compliance level to 5.0.
+
+[[Image(Sdk21.StepByStepEclipse.pic045.gif)]]
+
+Next we will import the ''openMDX SDK'' projects. Select ''File > Import''.
+
+[[Image(Sdk21.StepByStepEclipse.pic050.gif)]]
+
+Select ''Existing Projects into Workspace''.
+
+[[Image(Sdk21.StepByStepEclipse.pic060.gif)]]
+
+Navigate to the ''openMDX SDK'' installation directory. In our case this is ''C:\temp\SF\openmdxSdk-2.1.0'' and then to the project folder ''openmdx-2.1.0''. Eclipse recursively scans all directories. As a result it should present a list of projects as shown below:
+
+[[Image(Sdk21.StepByStepEclipse.pic070.gif)]]
+
+Deselect the projects ''openMDX/Core'', ''openMDX/Security'' and ''openMDX/Portal'' because they occur multiple times. We will add them manually in the next step. Then click ''Finish''.
+
+[[Image(Sdk21.StepByStepEclipse.pic080.gif)]]
+
+Your package explorer view now lists the projects shown below:
+
+[[Image(Sdk21.StepByStepEclipse.pic090.gif)]]
+
+Next we import the ''openMDX/Core'' project. Open the import dialog with ''File > Import > Existing Projects into Workspace''. Navigate to the directory ''.\openmdxSdk-2.1.0\openmdx-2.1.0\core'' and click ''Finish''.
+
+[[Image(Sdk21.StepByStepEclipse.pic100.gif)]]
+
+Next we do the same with the project ''openMDX/Security''. Open the import dialog with ''File > Import > Existing Projects into Workspace''. Navigate to the directory ''.\openmdxSdk-2.1.0\openmdx-2.1.0\security'' and click ''Finish''.
+
+[[Image(Sdk21.StepByStepEclipse.pic105.gif)]]
+
+Then import the project ''openMDX/Portal''. Open the import dialog with ''File > Import > Existing Projects into Workspace''. Navigate to the directory ''.\openmdxSdk-2.1.0\openmdx-2.1.0\portal'' and click ''Finish''.
+
+[[Image(Sdk21.StepByStepEclipse.pic110.gif)]]
+
+Then import the project ''openMDX/Example Helloworld''. Open the import dialog with ''File > Import > Existing Projects into Workspace''. Navigate to the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\helloworld'' and click ''Finish''.
+
+[[Image(Sdk21.StepByStepEclipse.pic111.gif)]]
+
+Then import the project ''openMDX/Example Workshop''. Open the import dialog with ''File > Import > Existing Projects into Workspace''. Navigate to the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\workshop'' and click ''Finish''.
+
+[[Image(Sdk21.StepByStepEclipse.pic112.gif)]]
+
+Then import the project ''openMDX Thirdparty HSQLDB 1''. Open the import dialog with ''File > Import > Existing Projects into Workspace''. Navigate to the directory ''.\openmdxSdk-2.1.0\openmdx-example-2.1.0\opt\hsqldb\jre-1.5\hsqldb-1'' and click ''Finish''.
+
+[[Image(Sdk21.StepByStepEclipse.pic113.gif)]]
+
+Finally, the structure of the project explorer looks as shown below. ''Eclipse'' must be able to compile all projects without errors.
+
+[[Image(Sdk21.StepByStepEclipse.pic120.gif)]]
+
+We are now ready to run the ''Helloworld'' JUnits. Open the folder ''src/java'' in the project ''openMDX/Example Helloworld'' and navigate to the package ''org.openmdx.example.helloworld1.program''. Right click on ''TestHelloWorld_1'' and select ''Run As > JUnit Test''.
+
+[[Image(Sdk21.StepByStepEclipse.pic130.gif)]]
+
+You will get the error '''unknown protocol: xri''' as shown below:
+
+[[Image(Sdk21.StepByStepEclipse.pic140.gif)]]
+
+To fix the problem open the run dialog with ''Run > Open Run Dialog'' and then select ''TestHelloWorld_1'' in the tab ''JUnit''. Then select the tab ''Arguments''. Enter the option ''-Djava.protocol.handler.pkgs=org.openmdx.kernel.url.protocol'' in the field ''VM arguments''.
+
+[[Image(Sdk21.StepByStepEclipse.pic150.gif)]]
+
+Run the test again. It should now complete successfully.
+
+Do the same with the Workshop JUnit ''TestExample_1'' located in the package ''org.openmdx.test.example.workshop1'' in the project ''openMDX/Example Workshop''. Do not forget to
+ * set the option ''-Djava.protocol.handler.pkgs=org.openmdx.kernel.url.protocol''
+ * add the project ''openMDX Thirdparty HSQLDB 1'' to the JUnit launch file
+ * start the workshop database as explained in [wiki:Sdk21.StepByStepAnt openMDX SDK 2.1 for Ant Step-by-Step]
+
+== Congratulations ==
+Congratulations! You have successfully prepared ''openMDX SDK 2.1'' for ''Eclipse''.

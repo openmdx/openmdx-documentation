@@ -1,0 +1,115 @@
+= 1 openMDX/Example 2.0 for ''Eclipse'' Step-by-Step Guide =
+
+This guide explains how to setup ''openMDX/Example 2.0'' for ''Eclipse''.
+
+'''IMPORTANT:''' This guide assumes that the ''openMDX/Example 2.0'' projects are successfully setup as described in the [wiki:Sdk20.StepByStepAnt openMDX/Example 2.0 for Ant Step-by-Step] and [wiki:Sdk20.StepByStepTomcat openMDX/Example 2.0 on Tomcat/LWC Step-by-Step] guides.
+
+Make sure that you have installed ''Eclipse 3.2'' or higher (download it from [http://www.eclipse.org/downloads/ here]) and the ''Sysdeo Eclipse Tomcat Launcher plugin'' (download it from [http://www.eclipsetotale.com/tomcatPlugin.html here]).
+
+After installation launch ''Eclipse''. Create a new workspace by selecting ''File > Switch Workspace > Other''. Enter the directory name of the new workspace. In this guide we will use the directory ''.\SF\eclipse\openmdx-example-workshop'' as shown below:
+
+[[Image(Sdk20.StepByStepEclipse.pic010.gif)]]
+
+''Eclipse'' will be launched with a new empty workspace.
+
+[[Image(Sdk20.StepByStepEclipse.pic020.gif)]]
+
+Close the Welcome page. Open the preferences dialog with ''Window > Preferences''. Navigate to the entry ''Java > Installed JREs''. Because the ''openMDX'' examples require a ''JDK 1.5'' we first have to add a ''JDK 1.5'' compliant ''JRE''. Click on ''Add'' and then enter ''JRE 5.0'' as ''JRE name'' and select the home directory of an installed ''JDK 1.5''. ''Eclipse'' automatically completes the other fields of the dialog as shown below:
+
+[[Image(Sdk20.StepByStepEclipse.pic030.gif)]]
+
+Select the newly added ''JRE 5.0'' as default JDK.
+
+[[Image(Sdk20.StepByStepEclipse.pic040.gif)]]
+
+Next we will import the ''openMDX/Example'' projects. Select ''File > Import''.
+
+[[Image(Sdk20.StepByStepEclipse.pic050.gif)]]
+
+Select ''Existing Projects into Workspace''.
+
+[[Image(Sdk20.StepByStepEclipse.pic060.gif)]]
+
+Navigate to the ''openMDX/Example'' installation directory. In our case this is ''C:\temp\SF\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0''. Eclipse recursively scans all directories. As a result it should present a list of projects as shown below:
+
+[[Image(Sdk20.StepByStepEclipse.pic070.gif)]]
+
+Deselect the projects ''openMDX/Core'' and ''openMDX/Portal'' because they occur multiple times. We will add them manually in the next step. Then click ''Finish''.
+
+[[Image(Sdk20.StepByStepEclipse.pic080.gif)]]
+
+Your package explorer view now lists the projects shown below:
+
+[[Image(Sdk20.StepByStepEclipse.pic090.gif)]]
+
+Next we import the ''openMDX/Core'' project. Open the import dialog with ''File > Import > Existing Projects into Workspace''. Navigate to the directory ''.\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0\opt\openmdx-2.0.0\jre-1.5\core'' and click ''Finish''.
+
+[[Image(Sdk20.StepByStepEclipse.pic100.gif)]]
+
+Next we do the same with the project ''openMDX/Portal''. Open the import dialog with ''File > Import > Existing Projects into Workspace''. Navigate to the directory ''.\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0\opt\openmdx-2.0.0\jre-1.5\portal'' and click ''Finish''.
+
+[[Image(Sdk20.StepByStepEclipse.pic110.gif)]]
+
+Finally, the structure of the project explorer looks as shown below. ''Eclipse'' must be able to compile all projects without errors.
+
+[[Image(Sdk20.StepByStepEclipse.pic120.gif)]]
+
+Next we have to configure ''Tomcat''. Open the preferences dialog with ''Window > Preferences'' and navigate to the entry ''Tomcat''. Set the version to ''Tomcat 6.x'' and the ''Tomcat Home'' to ''.\openmdxTomcatLwc-2.0.0\apache-tomcat-6''.
+
+[[Image(Sdk20.StepByStepEclipse.pic130.gif)]]
+
+In the tab ''Advanced'' select all projects.
+
+[[Image(Sdk20.StepByStepEclipse.pic140.gif)]]
+
+In the tab ''JVM Settings'' do the following:
+ * Set ''JRE 5.0'' in the JRE drop-down
+ * Add the JVM parameter ''-Xmx400M''
+ * Add the JVM parameter ''-Djava.protocol.handler.pkgs=org.openmdx.kernel.url.protocol''
+
+[[Image(Sdk20.StepByStepEclipse.pic150.gif)]]
+
+In the tab ''Source Path'' select ''Automatically Compute Source Path''.
+
+[[Image(Sdk20.StepByStepEclipse.pic160.gif)]]
+
+Then go back to the tab ''JVM Settings'' and click ''Create Start Configuration''. This creates an ''Eclipse'' launch file which allows to launch ''Tomcat 6'' with the settings we have made.
+
+[[Image(Sdk20.StepByStepEclipse.pic170.gif)]]
+
+Before we can launch ''Tomcat'' we first have to complete the classpath of the ''Tomcat 6.x'' launch file. Open the ''Run'' dialog with ''Run > Open Run Dialog''.
+
+[[Image(Sdk20.StepByStepEclipse.pic172.gif)]]
+
+Select the launch file for ''Tomcat 6.x'', select the tab ''Classpath'' and navigate to ''User Entries''. Then click on ''Add External JARs''.
+
+[[Image(Sdk20.StepByStepEclipse.pic174.gif)]]
+
+Navigate to the directory ''.\openmdxTomcatLwc-2.0.0\apache-tomcat-6\lib'' and select all JARs in this directory as shown below.
+
+[[Image(Sdk20.StepByStepEclipse.pic176.gif)]]
+
+The selected JARs are added to the ''User Entries''.
+
+[[Image(Sdk20.StepByStepEclipse.pic178.gif)]]
+
+Next we have to make sure that the Java compiler compliance level is set to version ''5.0'' for the projects ''helloworld'', ''lab'' and ''workshop''.
+
+Open the properties dialog by selecting the context menu of the project ''helloworld'' and the menu entry ''Properties''. Navigate to the entry ''Java Compiler'' and set the ''Compiler compliance level'' to ''5.0''.
+
+[[Image(Sdk20.StepByStepEclipse.pic180.gif)]]
+
+Do the same for the project ''lab''.
+
+[[Image(Sdk20.StepByStepEclipse.pic190.gif)]]
+
+At finally for the project ''workshop''.
+
+[[Image(Sdk20.StepByStepEclipse.pic200.gif)]]
+
+Finally you can start ''Tomcat''. Open the ''Run'' dialog with ''Run > Open Run Dialog''. Select ''Tomcat 6.x'' and click ''Run''. The console output should look as shown below. Compare your output with this sample output [attachment:Sdk20.StepByStepEclipse.eclipse-console-output.log].
+
+[[Image(Sdk20.StepByStepEclipse.pic210.gif)]]
+
+= 1.1 Congratulations =
+Congratulations! You have successfully prepared ''openMDX/Example 2.0'' for ''Eclipse''.

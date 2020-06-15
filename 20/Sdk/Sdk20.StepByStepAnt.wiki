@@ -1,0 +1,164 @@
+= 1 openMDX/Example 2.0 for Ant Step-by-Step =
+
+This guide explains how to install and setup ''openMDX/Example 2.0'' step-by-step.
+
+= 1.1 Download =
+
+First, download the installer executables from [https://sourceforge.net/project/showfiles.php?group_id=75132 here]:
+ * ''openmdxSdk-2.0.0-windows-installer.exe'' for Windows
+ * ''openmdxSdk-2.0.0-linux-installer.bin'' for Linux
+
+Before starting the installer make sure that you have installed [http://java.sun.com/javase/downloads/index_jdk5.jsp JDK 1.5], [http://ant.apache.org/bindownload.cgi Apache Ant 1.7] and [http://www.7-zip.org/ 7-Zip] (required for Windows platforms only).
+
+= 1.2 Set environment =
+
+Next, we have to check and set some environment variables. For this purpose open a shell (''MS-DOS'' command window on Windows platforms):
+
+{{{
+REM Windows
+set JAVA_HOME=c:\pgm\java\jdk1.5.0
+set PATH=%JAVA_HOME%\bin;%PATH%
+set JRE_15=%JAVA_HOME%\jre
+}}}
+
+'''IMPORTANT:''' On windows platforms add these settings to your System Environment variables.
+
+{{{
+#!/bin/sh
+export JAVA_HOME=/usr/lib/jvm/jdk1.5.0
+export PATH=$JAVA_HOME:$PATH
+export JRE_15=$JAVA_HOME/jre
+}}}
+
+'''HINT:''' It is a good idea to create a script (''.sh'' an Unix platforms, ''.bat'' or ''.cmd'' on Windows platforms) which does this job. This way you don't have to do it manually every time you open a new shell.
+
+Do not close the shell because we will need it in a minute.
+
+= 1.1 Installation =
+
+The installer first takes you to the welcome screen.
+
+[[Image(Sdk20.StepByStepAnt.p001.gif)]]
+
+On the next screen specify the installation directory. In this guide we will install the examples on a Windows platform in the directory ''c:\temp\SF\openmdxExampleSdk-2.0.0''.
+
+[[Image(Sdk20.StepByStepAnt.p002.gif)]]
+
+Specify the ''JDK 1.5'' home directory. You '''MUST''' specify the home directory of a full ''JDK 1.5'' installation. A '''JRE installation is NOT sufficient'''!
+
+[[Image(Sdk20.StepByStepAnt.p003.gif)]]
+
+In the next screen specify the home directory of ''Apache Ant 1.7.0''.
+
+[[Image(Sdk20.StepByStepAnt.p004.gif)]]
+
+At the end of the installation the installer executes a post-installation script. This script prepares and compiles all projects. If everything goes well your log should look like this sample output [attachment:Sdk20.StepByStepAnt.postinstallation-script-result.log]. Possible failure reasons are:
+ * On Windows platforms the system environment variable J''AVA_HOME'' does not point to a valid ''JDK 1.5'' or ''JDK 1.6''
+ * During installation the ''JDK 1.5'' home or the ''Apache Ant 1.7.0'' home directory are not specified correctly
+ * ''7-Zip'' is not installed
+In any case, run uninstall, fix the error cause and run the installer again.
+
+[[Image(Sdk20.StepByStepAnt.p005.gif)]]
+
+The ''README'' is shown during the last installation step. Read it! It says that ''openMDX/Example 2.0'' contains three sample projects: ''helloworld'', ''lab'' and ''workshop''. All projects come with an ant ''build.xml'' accepting the following targets:
+ * ''clean'': clean the project
+ * ''install-src'': expand project source files
+ * ''deliverables'': compile and build JARs
+ * ''distribution'': compile, build JARs and distribution
+ * ''config'': display the project settings
+
+[[Image(Sdk20.StepByStepAnt.p006.gif)]]
+
+After successful installation the directory structure should look like the screen shown below. The top-level directories are:
+ * ''helloworld'': contains the helloworld project
+ * ''lab'': contains the lab project
+ * ''workshop'': contains the workshop project
+ * ''jre-1.5'': contains the generated JARs, EARs, ... for the target platform ''JRE 1.5''
+ * ''source-archive'': contains all sources in zipped format
+ * ''opt'': contains third-party libraries (also see next step)
+
+[[Image(Sdk20.StepByStepAnt.p007.gif)]]
+
+The projects requires JDBC drivers which are not distributed with the installer. However, you can download the ZIP from [attachment:Sdk20.StepByStepAnt.postinstallation-script-result.log] and extract the content to the directory ''.\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0'' as shown below:
+
+[[Image(Sdk20.StepByStepAnt.p013.gif)]]
+
+Next you have to apply the following patches to the project:
+
+[[Image(Sdk20.StepByStepAnt.p014.gif)]]
+
+ * Get the ZIP containing the patches from here [attachment:Sdk20.StepByStepAnt.openmdx-example-2.0.0.zip] and extract the content to the directory ''.\openmdxExampleSdk-2.0.0''
+ * Remove the file ''show-org.openmdx.example.workshop1.Segment.jsp'' located in the directory ''.\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0\workshop\src\data\org.openmdx.example\WEB-INF\config\layout\en_US''
+
+Now you are ready to build the projects and run the JUnit tests. Let's start with the ''helloworld'' project. Open a shell and run the following commands:
+ * cd to the directory ''.\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0\helloworld''
+ * Run ''ant deliverables''
+ * Run ''ant test''
+
+After running ant test your console should look like shown below. Compare your output with this sample output [attachment:Sdk20.StepByStepAnt.helloworld-ant-test.log].
+
+[[Image(Sdk20.StepByStepAnt.p108.gif)]]
+
+Now let us continue with the ''lab'' project:
+ * cd to the directory ''.\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0\lab''
+ * Run ''ant deliverables''
+ * Run ''ant -f run.xml clientTypedSolution''
+ * Run ''ant -f run.xml clientFilterSolution''
+ * Run ''ant -f run.xml clientReflectiveSolution''
+ * Run ''ant -f run.xml clientXmlImporterSolution''
+ * Run ''ant -f run.xml pluginJmiSolution''
+
+Your console output should look as shown below. Compare your output with this sample output [attachment:Sdk20.StepByStepAnt.lab-ant-test.log].
+
+[[Image(Sdk20.StepByStepAnt.p109.gif)]]
+
+Next we build and test the ''workshop'' project:
+ * cd to the directory ''.\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0\workshop''
+ * Run ''ant deliverables''
+ * Run ''ant test''
+
+[[Image(Sdk20.StepByStepAnt.p110.gif)]]
+
+''ant test'' will report errors. The console output shows an URL pointing at the JUnit test report.
+
+[[Image(Sdk20.StepByStepAnt.p111.gif)]]
+
+Open the report with a browser and navigate to the error log. The stack trace shows that we have a ''MEDIA_ACCESS_FAILURE'' exception and the description is ''Failure when getting a connection from 'java:comp/env/jdbc/datasource\[0\]'''. The workshop example tries to establish a database connection. However, this fails because we did not install the workshop database yet.
+
+[[Image(Sdk20.StepByStepAnt.p115.gif)]]
+
+First, let's have a look at the file which specifies how the ''workshop'' example connects to the database. Open the file ''.\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0\workshop\src\connector\openmdx-2\postgresql-8.rar\META-INF\ra.xml''. The file looks as shown below:
+
+[[Image(Sdk20.StepByStepAnt.p116.gif)]]
+
+The ''postgresql-8.rar'' specifies a Java connector packaged as resource archive (''.rar''). For more information about the ''J2EE Connector Architecture'' see [http://java.sun.com/j2ee/connector/ here]. The ''ra.xml'' shows that a ''JDBC'' connection is established with the database located at ''jdbc:postgresql:''localhost/OPENMDX_EXAMPLE_WORKSHOP'' with the specified user name and password.
+
+Before we can run the test successfully we first have to create the database ''OPENMDX_EXAMPLE_WORKSHOP'' as follows:
+ * Open ''pgAdminIII''
+ * Go to ''Databases'' and launch the dialog ''New Database'' with a right mouse click
+ * Enter ''OPENMDX_EXAMPLE_WORKSHOP'' as database name, set ''postgres'' as owner and ''UTF-8'' as encoding
+ * After clicking OK the database will be created
+
+[[Image(Sdk20.StepByStepAnt.p117.gif)]]
+
+Next we have to create the database schema:
+ * Navigate to the directory ''.\openmdxExampleSdk-2.0.0\openmdx-example-2.0.0\workshop\src\sql\postgresql-8''
+ * The directory contains three ''SQL'' scripts
+ 
+[[Image(Sdk20.StepByStepAnt.p118.gif)]]
+
+Open the ''pgAdminIII Query Browser'' and execute the scripts in the following order:
+ * ''dbcreate-tables.sql''
+ * ''dbcreate-views.sql''
+ * ''populate-preferences.sql''
+
+[[Image(Sdk20.StepByStepAnt.p119.gif)]]
+
+The scripts must complete without errors. Finally, the database structure must look as shown below:
+
+[[Image(Sdk20.StepByStepAnt.p120.gif)]]
+
+We are now ready to run ant test for the project ''workshop'' again. This time the tests should complete without errors. Compare your console output with this sample output [attachment:Sdk20.StepByStepAnt.workshop-ant-test-no-errors.log].
+
+= 1.3 Congratulations =
+Congratulations! You have successfully installed and prepared the ''openMDX/Example 2.0'' projects.

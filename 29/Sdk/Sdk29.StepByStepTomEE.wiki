@@ -1,0 +1,97 @@
+# openMDX SDK 2.9 for _Apache TomEE_ Step-by-Step Guide #
+
+This guide explains how to install, setup and deploy the examples of _openMDX SDK 2.9_ on _Apache TomEE_.
+
+In this guide we use _Apache TomEE_ to deploy the sample applications. To make life easier for you, _openMDX_ provides an installer which you can download from [here](https://sourceforge.net/projects/openmdx/files/):
+
+* _TomcatOpenEJB-2.9.0-windows-installer.exe_ for _Windows_
+* _TomcatOpenEJB-2.9.0-linux-installer.bin_ for _Linux_
+
+However, if you prefer you can deploy the applications also on any other _J2EE_ Application Server.
+
+__IMPORTANT:__ This guide assumes that the _openMDX SDK 2.9_ projects are successfully setup as described in [openMDX SDK 2.9 for Ant Step-by-Step](Sdk29.StepByStepAnt).
+
+Open a shell and go to the directory _./openmdxSdk-2.9.0_. Set the environment by executing _setenv.bat_ in Windows platforms and _setenv.sh_ on Unix platforms.
+
+Then go to the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/helloworld_. Run the command _ant assemble_. This builds the _EARs_ which we will deploy on _Apache TomEE_. The console output looks as shown below.
+
+[[img src=Sdk29.StepByStepTomcat.pic090.png]]
+
+The generated _EAR_ is located in the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/jre-1.5/helloworld/deployment-unit_. Copy the file _openmdx-helloworld.ear_ to the directory _./TomcatOpenEJB-6.0.26\apache-tomcat-6\apps_ as shown below:
+
+[[img src=Sdk29.StepByStepTomcat.pic100.png]]
+
+Next we have to add the user _guest_ to the _tomcat-user.xml_ which allows us to login to the _helloworld_ application. Open the file _./TomcatOpenEJB-6.0.26/apache-tomcat-6/conf/tomcat-users.xml_. Add a new entry for the user _guest_ (if does not already exist) and add the role _openMDXUser_ as shown below.
+
+[[img src=Sdk29.StepByStepTomcat.pic120.png]]
+
+Finally start _Apache TomEE_ by clicking the _Start Tomcat + OpenEJB_ shortcut. This starts _Tomcat + OpenEJB_ and deploys the application _helloworld_. The console output should look as shown below.
+
+[[img src=Sdk29.StepByStepTomcat.pic130.png]]
+
+Next click in the _Login Tomcat + OpenEJB_ shortcut. This launches a browser with the _Tomcat + OpenEJB_ main URL. Complete the URL by adding _openmdx-helloworld_/. This opens the _helloworld_ login page. Enter the user _guest_ and the password which you have defined in the _tomcat-users.xml_.
+
+[[img src=Sdk29.StepByStepTomcat.pic140.png]]
+
+The main page of the _helloworld_ application is shown after successful login. The GUI of the _helloworld_ application uses the generic _openMDX/Portal_ GUI. The GUI is not customized, that's why labels and icons do not look very user-friendly. However, the GUI is fully workable.
+
+[[img src=Sdk29.StepByStepTomcat.pic150.png]]
+
+In order to test the _sayHello()_ operation, go to the menu _Pane:Op:90000_ and select the menu entry _Pane:Op:Tab:sayHello_ as shown below:
+
+[[img src=Sdk29.StepByStepTomcat.pic160.png]]
+
+The _sayHello()_ operation takes as parameter the language which makes _helloworld_ to return a language-specific _Say Hello_ text. Enter one of the languages _de_, _en_ or _fr_ and click _OK_.
+
+[[img src=Sdk29.StepByStepTomcat.pic170.png]]
+
+The GUI invokes the operation _sayHello()_ which returns the _Say Hello_ message as result which is shown below:
+
+[[img src=Sdk29.StepByStepTomcat.pic180.png]]
+
+Stop _Tomcat_ by clicking on the _Stop Tomcat + OpenEJB_ shortcut.
+
+In a next step we will build and deploy the _workshop_ application. Go back to the shell and change to the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/workshop_. Run the command _ant assemble_.
+
+[[img src=Sdk29.StepByStepTomcat.pic190.png]]
+
+Next copy the EAR _openmdx-example-workshop.ear_ from the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/jre-1.5/workshop/deployment-unit_ to the directory _./TomcatOpenEJB-6.0.26/apache-tomcat-6/apps_ as shown below:
+
+[[img src=Sdk29.StepByStepTomcat.pic200.png]]
+
+Because the _workshop_ example accesses a database we have to add a JDBC datasource configuration to the _OpenEJB_ configuration _openejb.xml_. Open the file _./openmdxSdk-2.9.0/openmdx-example-2.9.0/workshop/src/connector/openejb-3/openejb.xml_ and copy/paste the configuration entry into the file _./TomcatOpenEJB-6.0.26/apache-tomcat-6/conf/openejb.xml_ as shown below:
+
+[[img src=Sdk29.StepByStepTomcat.pic210.png]]
+
+Compare the contents of your _apps_ directory with the directory structure shown below:
+
+[[img src=Sdk29.StepByStepTomcat.pic230.png]]
+
+Before restarting _Tomcat + OpenEJB_ clean the contents of the directory _work_ and _temp_. This makes sure that we do not deploy old files.
+
+Start _Tomcat + OpenEJB_ by clicking on the _Start Tomcat + OpenEJB_ shortcut.
+
+[[img src=Sdk29.StepByStepTomcat.pic250.png]]
+
+Launch a browser, complete the URL with the suffix _openmdx-workshop_/ and login as _guest_:
+
+[[img src=Sdk29.StepByStepTomcat.pic260.png]]
+
+Next you should see the main page of the workshop application:
+
+[[img src=Sdk29.StepByStepTomcat.pic290.png]]
+
+The project comes with some basic customizing. E.g. it comes with a wizard which can be launched from the menu item _Wizards > Create New Project..._. A wizard is a user-defined GUI extension. Wizards are a powerful and flexbile way to extend the standard _openMDX/Portal GUI_. Wizards are implemented as standard _JSPs_ and as such have access to the full functionality of the application's API. The source code of the wizard is located in the directory _./openmdxSdk-2.9.0/openmdx-example-2.9.0/workshop/src/data/org.openmdx.example/wizards/en_US_.
+
+[[img src=Sdk29.StepByStepTomcat.pic300.png]]
+
+Before we can use the wizard we have to create the team member _The Boss_. In the tab _Team Members_ select _New > Team Member_ and fill out the form as shown below:
+
+[[img src=Sdk29.StepByStepTomcat.pic310.png]]
+
+Next launch the wizard. Enter values for project name, project manager and project tasks and click OK. After successful completion the wizards returns to the standard GUI which displays the newly created objects.
+
+[[img src=Sdk29.StepByStepTomcat.pic320.png]]
+
+## Congratulations ##
+Congratulations! You have successfully built and deployed the _openMDX SDK 2.9_ projects on _Tomcat + OpenEJB_.
