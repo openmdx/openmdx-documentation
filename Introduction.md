@@ -246,7 +246,7 @@ _openMDX_-generators to Java interfaces by applying the _MOF_ to Java mapping
 (specified by the [http://java.sun.com/products/jmi/index.jsp Java metadata interface (JMI)] 
 standard). These interfaces define the API of the the application's domain object model.
 
-![img](files/Overview/Overview.p010.png)
+![img](files/Overview.p010.png)
 
 The corresponding _JMI_ interface is shown below:
 

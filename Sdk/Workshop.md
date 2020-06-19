@@ -7,7 +7,8 @@ This guide explains how to write applications using _openMDX_ based on the _open
 This guide assumes that
 
 * The _openMDX SDK Examples_ are prepared as described in [openMDX SDK Examples](./Examples.md)
-* You have read [Introduction to openMDX](../Introduction.md) and [Modeling with openMDX](../Modeling/README.md)
+* You have read [Introduction to openMDX](../Introduction.md) and 
+  [Modeling with openMDX](../Modeling/README.md) 
 
 ## Overview ##
 
@@ -169,9 +170,9 @@ such as association classes and class dependencies are typically not required fo
 modeling and if so, these features can be modeled in alternate ways. One exception are 
 qualifiers: in addition to the _MOF_ model elements, _openMDX_ supports _UML qualifiers_. Qualifiers 
 are required to specify in a precise way the object access paths. For more information about 
-modeling see [Introduction to Modeling with openMDX](../Modeling/README.md).
+modeling see [Modeling with openMDX](../Modeling/README.md).
 
-The figure below shows the _Workshop_ model.
+The figure below shows the _Workshop_ model. 
 
 ![img](files/Workshop/Workshop.pic020.png)
 
@@ -181,9 +182,9 @@ persistence manager. However, it is good practice. _BasicObject_ defines the
 attributes _createdAt_, _createdBy_, _modifiedAt_, _modifiedBy_ which should be 
 available for all business objects.
 
-We recommend using _Eclipse UML2Tools_ in order to create the models. The following 
-modeling tools are currently supported:
-* EMF: _Eclipse UML2Tool_
+We recommend using _Eclipse Papyrus_ for model editing. The following modeling tools 
+are currently supported:
+* EMF: _Eclipse Papyrus_
 * RSM: _IBM Rational Software Modeler_
 
 Put the model files in the model tool specific sub-directory and instruct the model mapper 
@@ -197,9 +198,9 @@ model.transformation.source=emf
 # model.transformation.source=rsm
 ~~~~~~
 
-__NOTE__: Using _EMF_ properly requires some experience. In order to create a model for a
-new project, it is a good idea to start with the model file from the _Workshop_ project. 
-In a second step adapt the model package names and then add and remove classes and
+__NOTE__: Using _EMF_ and _Papyrus_ properly requires some experience. In order to create a 
+model for a new project, it is a good idea to start with the model file from the _Workshop_ 
+project.  In a second step adapt the model package names and then add and remove classes and
 associations to your needs.
 
 As already explained, the model specifies the application's API. The model is mapped to

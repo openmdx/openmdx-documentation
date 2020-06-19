@@ -19,7 +19,7 @@ Get the _openMDX Examples_ sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx-example.git openmdx-example
-git checkout openmdx-2.11.0
+git checkout openmdx-2.12.0
 ~~~~~~
 
 Now build the _openMDX/Examples_. First prepare the _opt_ directory:
@@ -54,7 +54,7 @@ Get the _openMDX Examples_ sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx-example.git openmdx-example
-git checkout openmdx-2.11.0
+git checkout openmdx-2.12.0
 ~~~~~~
 
 Now build the _openMDX/Examples_. First prepare the _opt_ directory:
