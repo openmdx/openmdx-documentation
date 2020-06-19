@@ -8,7 +8,7 @@ Make sure that you have installed _Eclipse Neon_ (download it from [here](http:/
 
 Also make sure that you have installed the _Papyrus Plugin for Eclipse_ in order to be able to view the UML diagrams which come with the _openMDX SDK_. See [here](http://www.eclipse.org/papyrus/updates/) for installation instructions.  
 
-After installation launch _Eclipse_. Create a new workspace by selecting _File > Switch Workspace > Other_. Enter the directory name of the new workspace. In this guide we will use the directory _/tmp/dev/eclipse/openmdx_ as shown below:
+After installation launch _Eclipse_. Create a new workspace by selecting _File > Switch Workspace > Other_. Enter the directory name of the new workspace. In this guide we will use the directory _/tmp/dev/eclipse/openmdx2_ as shown below:
 
 ![img](files/StepByStepEclipse/StepByStepEclipse.pic010.png)
 
@@ -38,7 +38,7 @@ Select _Existing Projects into Workspace_.
 
 ![img](files/StepByStepEclipse/StepByStepEclipse.pic060.png)
 
-Navigate to the _openMDX SDK_ installation directory and then to the project folder _openmdx_. Eclipse recursively scans all directories. Deselect the projects _openMDX/Core_, _openMDX/Security_ and _openMDX/Portal_ because they occur multiple times as indicated below:
+Navigate to the _openMDX SDK_ installation directory and then to the project folder _openmdx2_. Eclipse recursively scans all directories. Deselect the projects _openMDX/Core_, _openMDX/Security_ and _openMDX/Portal_ because they occur multiple times as indicated below:
 
 ![img](files/StepByStepEclipse/StepByStepEclipse.pic080.png)
 
