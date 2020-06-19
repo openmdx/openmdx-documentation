@@ -7,8 +7,7 @@ This guide explains how to write applications using _openMDX_ based on the _open
 This guide assumes that
 
 * The _openMDX SDK Examples_ are prepared as described in [openMDX SDK Examples](./Examples.md)
-* You have read [Introduction to openMDX](./Introduction.md) and 
-  [Introduction to Modeling with openMDX](./IntroductionToModeling.md) 
+* You have read [Introduction to openMDX](../Introduction.md) and [Modeling with openMDX](../Modeling/README.md)
 
 ## Overview ##
 
@@ -170,9 +169,9 @@ such as association classes and class dependencies are typically not required fo
 modeling and if so, these features can be modeled in alternate ways. One exception are 
 qualifiers: in addition to the _MOF_ model elements, _openMDX_ supports _UML qualifiers_. Qualifiers 
 are required to specify in a precise way the object access paths. For more information about 
-modeling see [Introduction to Modeling with openMDX](./IntroductionToModeling.md).
+modeling see [Introduction to Modeling with openMDX](../Modeling/README.md).
 
-The figure below shows the _Workshop_ model. 
+The figure below shows the _Workshop_ model.
 
 ![img](files/Workshop/Workshop.pic020.png)
 
