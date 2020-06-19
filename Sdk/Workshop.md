@@ -7,8 +7,8 @@ This guide explains how to write applications using _openMDX_ based on the _open
 This guide assumes that
 
 * The _openMDX SDK Examples_ are prepared as described in [openMDX SDK Examples](./Examples.md)
-* You have read [Introduction to openMDX](../Introduction.md) and 
-  [Introduction to Modeling with openMDX](../IntroductionToModeling.md) 
+* You have read [Introduction to openMDX](./Introduction) and 
+  [Introduction to Modeling with openMDX](./IntroductionToModeling) 
 
 ## Overview ##
 

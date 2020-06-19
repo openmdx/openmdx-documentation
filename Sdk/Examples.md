@@ -19,19 +19,15 @@ Get the _openMDX Examples_ sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx-example.git openmdx-example
-git checkout OPENMDX_2_10_0
+git checkout openmdx-2.11.0
 ~~~~~~
 
 Now build the _openMDX/Examples_. First prepare the _opt_ directory:
 
 ~~~~~~
-cd ..
 cd openmdx-example
 cd opt
-cp ../../openmdx/distribution/*.tar.gz .
-tar xf openmdx-2.10.0-core.jre-1.6.tar.gz
-tar xf openmdx-2.10.0-portal.jre-1.6.tar.gz
-tar xf openmdx-2.10.0-security.jre-1.6.tar.gz
+ant install-opt
 cd ..
 ~~~~~~
 
@@ -58,19 +54,15 @@ Get the _openMDX Examples_ sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx-example.git openmdx-example
-git checkout OPENMDX_2_10_0
+git checkout openmdx-2.11.0
 ~~~~~~
 
 Now build the _openMDX/Examples_. First prepare the _opt_ directory:
 
 ~~~~~~
-cd ..
 cd openmdx-example
 cd opt
-copy ..\..\openmdx\distribution\*.zip .
-unzip openmdx-2.10.0-core.jre-1.6.zip
-unzip openmdx-2.10.0-portal.jre-1.6.zip
-unzip openmdx-2.10.0-security.jre-1.6.zip
+ant install-opt
 cd ..
 ~~~~~~
 
@@ -152,7 +144,7 @@ Before we can run the test successfully we first have to start the _HSQLDB_ data
 
 ~~~~~
 cd ./openmdx-example/workshop/etc/data/workshop
-startdb.bat on Windows platforms or ./startdb.sh_ on Linux
+startdb.bat on Windows platforms or ./startdb.sh on Linux
 ~~~~~
 
 ![img](files/Examples/Examples.p120.png)
@@ -163,7 +155,7 @@ You can also look at the database tables and data by launching the _HSQLDB_ data
 
 ~~~~~
 cd ./openmdx-example/workshop/etc/data/workshop
-startdbmanager.bat on Windows platforms or ./startdbmanager.sh_ on Linux
+startdbmanager.bat on Windows platforms or ./startdbmanager.sh on Linux
 ~~~~~
 
 ![img](files/Examples/Examples.p125.png)

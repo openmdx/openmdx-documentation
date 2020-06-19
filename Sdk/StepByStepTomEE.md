@@ -1,18 +1,18 @@
-# openMDX 2.10 for _Apache TomEE_ Step-by-Step Guide #
+# openMDX SDK for _Apache TomEE_ Step-by-Step Guide #
 
-This guide explains how to install, setup and deploy the examples of _openMDX 2.10_ on _Apache TomEE_.
+This guide explains how to install, setup and deploy the examples of _openMDX SDK_ on _Apache TomEE_.
 
 In this guide we use _Apache TomEE_ to deploy the sample applications. However, if you prefer you can deploy the applications also on any other _J2EE_ Application Server.
 
-__IMPORTANT:__ This guide assumes that the _openMDX 2.10_ projects are successfully setup as described in [openMDX 2.10 for Ant Step-by-Step](./StepByStepAnt.md).
+__IMPORTANT:__ This guide assumes that the _openMDX SDK Examples_ projects are successfully setup as described in [openMDX SDK Examples](./Examples.md).
 
-Open a shell and go to the directory where you have installed openMDX 2.10, e.g. _/tmp/dev_. Set the environment by executing _setenv.bat_ in Windows platforms and _setenv.sh_ on Unix platforms.
+Open a shell and go to the directory where you have installed openMDX SDK, e.g. _/tmp/dev_. Set the environment by executing _setenv.bat_ in Windows platforms and _setenv.sh_ on Unix platforms.
 
-Then go to the directory _./openmdx2-example/helloworld_. Run the command _ant assemble_. This builds the _EARs_ which we will deploy on _Apache TomEE_. The console output looks as shown below.
+Then go to the directory _./openmdx-example/helloworld_. Run the command _ant assemble_. This builds the _EARs_ which we will deploy on _Apache TomEE_. The console output looks as shown below.
 
 ![img](files/StepByStepTomEE/StepByStepTomcat.pic090.png)
 
-The generated _EAR_ is located in the directory _./openmdx2-example/jre-1.6/helloworld/deployment-unit_. Copy the file _openmdx-helloworld.ear_ to the directory _$CATALINA_BASE/apps_ as shown below:
+The generated _EAR_ is located in the directory _./openmdx-example/jre-1.6/helloworld/deployment-unit_. Copy the file _openmdx-helloworld.ear_ to the directory _$CATALINA_BASE/apps_ as shown below:
 
 ![img](files/StepByStepTomEE/StepByStepTomcat.pic100.png)
 
@@ -57,7 +57,7 @@ echo Using JAVA_OPTS:       "%JAVA_OPTS%"
 Then copy _openmdx-system.jar_ to _$CATALINA_BASE/bin_.
 
 ~~~~~~
-> cp /tmp/dev/openmdx2/jre-1.6/core/lib/openmdx-system.jar $CATALINA_BASE/bin
+cp /tmp/dev/openmdx/jre-1.6/core/lib/openmdx-system.jar $CATALINA_BASE/bin
 ~~~~~~
 
 Finally start _TomEE_ with _$CATALINA_BASE/bin/catalina.sh run_. This starts _TomEE_ and deploys the application _helloworld_. The console output should look as shown below.
@@ -86,17 +86,23 @@ The GUI invokes the operation _sayHello()_ which returns the _Say Hello_ message
 
 Stop _TomEE_ with _$CATALINA_BASE/bin/catalina.sh stop_.
 
-In a next step we will build and deploy the _workshop_ application. Go back to the shell and change to the directory _./openmdx2-example/workshop_. Run the command _ant assemble_.
+In a next step we will build and deploy the _workshop_ application. Go back to the shell and change to the directory _./openmdx-example/workshop_. Run the command _ant assemble_.
 
 ![img](files/StepByStepTomEE/StepByStepTomcat.pic190.png)
 
-Next copy the EAR _openmdx-example-workshop.ear_ from the directory _./openmdx2-example/jre-1.6/workshop/deployment-unit_ to the directory _$CATALINA_BASE/apps_ as shown below:
+Next copy the EAR _openmdx-example-workshop.ear_ from the directory _./openmdx-example/jre-1.6/workshop/deployment-unit_ to the directory _$CATALINA_BASE/apps_.
 
-![img](files/StepByStepTomEE/StepByStepTomcat.pic200.png)
+Because the _workshop_ example accesses a database we have to add a JDBC datasource configuration to the configuration _tomee.xml_. Add the following configuration to _tomee.xml_:
 
-Because the _workshop_ example accesses a database we have to add a JDBC datasource configuration to the configuration _tomee.xml_. Open the file _./openmdx2-example/workshop/src/connector/openejb-3/openejb.xml_ and copy/paste the configuration entry into the file _$CATALINA_BASE/conf/tomee.xml_ as shown below:
-
-![img](files/StepByStepTomEE/StepByStepTomcat.pic210.png)
+~~~~~~
+<Resource id="jdbc_openmdx_example_workshop" type="DataSource">
+ JdbcDriver org.hsqldb.jdbcDriver
+ JdbcUrl jdbc:hsqldb:hsql://127.0.0.1:9002/WORKSHOP
+ UserName sa
+ Password manager99
+ JtaManaged true
+</Resource>
+~~~~~~
 
 Compare the contents of your _apps_ directory with the directory structure shown below:
 
@@ -116,7 +122,7 @@ Next you should see the main page of the workshop application:
 
 ![img](files/StepByStepTomEE/StepByStepTomcat.pic290.png)
 
-The project comes with some basic customizing. E.g. it comes with a wizard which can be launched from the menu item _Wizards > Create New Project..._. A wizard is a user-defined GUI extension. Wizards are a powerful and flexbile way to extend the standard _openMDX/Portal GUI_. Wizards are implemented as standard _JSPs_ and as such have access to the full functionality of the application's API. The source code of the wizard is located in the directory _./openmdx2-example/workshop/src/data/org.openmdx.example/wizards/en_US_.
+The project comes with some basic customizing. E.g. it comes with a wizard which can be launched from the menu item _Wizards > Create New Project..._. A wizard is a user-defined GUI extension. Wizards are a powerful and flexbile way to extend the standard _openMDX/Portal GUI_. Wizards are implemented as standard _JSPs_ and as such have access to the full functionality of the application's API. The source code of the wizard is located in the directory _./openmdx-example/workshop/src/data/org.openmdx.example/wizards/en_US_.
 
 ![img](files/StepByStepTomEE/StepByStepTomcat.pic300.png)
 
@@ -129,4 +135,4 @@ Next launch the wizard. Enter values for project name, project manager and proje
 ![img](files/StepByStepTomEE/StepByStepTomcat.pic320.png)
 
 ## Congratulations ##
-Congratulations! You have successfully built and deployed the _openMDX SDK 2.10_ projects on _TomEE_.
+Congratulations! You have successfully built and deployed the _openMDX SDK_ projects on _TomEE_.
