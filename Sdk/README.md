@@ -1,4 +1,4 @@
-# Welcome to openMDX SDK 2.12 #
+# Welcome to openMDX SDK #
 
 ## [openMDX SDK for Ant Step-by-Step Guide](./StepByStepAnt.md) ##
 This guide explains how to install and setup openMDX SDK for Ant.

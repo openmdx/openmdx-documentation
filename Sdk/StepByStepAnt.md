@@ -41,7 +41,7 @@ Get the openMDX sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx.git openmdx
-git checkout openmdx-2.12.0
+git checkout openmdx-2.13.0
 ~~~~~~
 
 And then build _openMDX/Core_.
