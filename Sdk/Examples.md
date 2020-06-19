@@ -19,7 +19,7 @@ Get the _openMDX Examples_ sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx-example.git openmdx-example
-git checkout openmdx-2.14.0
+git checkout openmdx-2.15.0
 ~~~~~~
 
 Now build the _openMDX/Examples_. First prepare the _opt_ directory:
@@ -54,7 +54,7 @@ Get the _openMDX Examples_ sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx-example.git openmdx-example
-git checkout openmdx-2.14.0
+git checkout openmdx-2.15.0
 ~~~~~~
 
 Now build the _openMDX/Examples_. First prepare the _opt_ directory:
@@ -227,7 +227,7 @@ Run the test again. It should now complete successfully.
 
 ![img](files/Examples/Examples.p230.png)
 
-Do the same with the JUnit _TestExample\_1_ from the Workshop project located in the package _org.openmdx.test.example.workshop1_ in the project _openMDX/Example Workshop_. Do not forget to
+Do the same with the JUnit _TestExample_1_ from the Workshop project located in the package _org.openmdx.test.example.workshop1_ in the project _openMDX/Example Workshop_. Do not forget to
 
 * Add the folder _openmdx-workshop.jar_ to the classpath
 * Add the project _openMDX Thirdparty HSQLDB 2_ to the classpath

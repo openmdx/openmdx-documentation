@@ -6,7 +6,7 @@ This guide explains how to build _openMDX SDK_ from the sources.
 
 Before you are able to build openMDX make sure that you have the following software installed:
 
-* [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/) or [OpenJDK 1.7](https://jdk7.java.net/)
+* [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/) or [OpenJDK 1.8](https://jdk7.java.net/)
 * [Apache Ant 1.9.4](http://ant.apache.org/bindownload.cgi)
 * [GIT](http://git-scm.com/downloads)
 
@@ -24,7 +24,7 @@ Launch _vi_ and create the script _setenv.sh_. Adapt the variables to your envir
 
 ~~~~~~
 #!/bin/sh
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export ANT_HOME=/opt/apache-ant-1.9.4
 export JRE_16=$JAVA_HOME/jre
 export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:$PATH
@@ -41,7 +41,7 @@ Get the openMDX sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx.git openmdx
-git checkout openmdx-2.14.0
+git checkout openmdx-2.15.0
 ~~~~~~
 
 And then build _openMDX_.
@@ -65,7 +65,7 @@ notepad setenv.cmd
 Launch _notepad_ and create the script _setenv.cmd_. Adapt the variables to your environment. Save the file and exit vi.
 
 ~~~~~~
-set JAVA_HOME=C:\pgm\Java\jdk1.7.0_65
+set JAVA_HOME=C:\pgm\Java\jdk1.8.0_65
 set ANT_HOME=C:\pgm\apache-ant-1.9.4
 set JRE_16=%JAVA_HOME%\jre
 set OPENMDX_BIN_HOME=c:\temp\dev\openmdx\core\thirdparty
@@ -82,7 +82,7 @@ Get the openMDX sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx.git openmdx
-git checkout openmdx-2.14.0
+git checkout openmdx-2.15.0
 ~~~~~~
 
 And then build _openMDX_.
