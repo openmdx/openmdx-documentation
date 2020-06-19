@@ -8,7 +8,7 @@ Make sure that you have installed _Eclipse Juno_ (download it from [here](http:/
 
 Also make sure that you have installed the _Papyrus Plugin for Eclipse_ in order to be able to view the UML diagrams which come with the _openMDX SDK_. See [here](http://www.eclipse.org/papyrus/updates/) for installation instructions.  
 
-After installation launch _Eclipse_. Create a new workspace by selecting _File > Switch Workspace > Other_. Enter the directory name of the new workspace. In this guide we will use the directory _/tmp/dev/eclipse/openmdx_ as shown below:
+After installation launch _Eclipse_. Create a new workspace by selecting _File > Switch Workspace > Other_. Enter the directory name of the new workspace. In this guide we will use the directory _/tmp/dev/eclipse/openmdx2_ as shown below:
 
 ![img](files/StepByStepEclipse/StepByStepEclipse.pic010.png)
 
@@ -18,15 +18,15 @@ _Eclipse_ will be launched with a new empty workspace.
 
 Close the Welcome page. 
 
-Now we have to configure the JDK. Open the preferences dialog with _Window > Preferences_. Navigate to the entry _Java > Installed JREs_. Because _openMDX_ require a _JDK 1.6_ we first have to add a _JDK 1.6_ compliant _JRE_. Click on _Add_ and then enter _JRE 6_ as _JRE name_ and select the home directory of an installed _JDK 1.6_. _Eclipse_ automatically completes the other fields of the dialog as shown below:
+Now we have to configure the JDK. Open the preferences dialog with _Window > Preferences_. Navigate to the entry _Java > Installed JREs_. Because _openMDX_ require a _JDK 1.7_ we first have to add a _JDK 1.7_ compliant _JRE_. Click on _Add_ and then enter _JRE 7_ as _JRE name_ and select the home directory of an installed _JDK 1.7_. _Eclipse_ automatically completes the other fields of the dialog as shown below:
 
 ![img](files/StepByStepEclipse/StepByStepEclipse.pic030.png)
 
-Select the newly added _JRE 6_ as default JDK and remove any other JDKs from the list.
+Select the newly added _JRE 7_ as default JDK and remove any other JDKs from the list.
 
 ![img](files/StepByStepEclipse/StepByStepEclipse.pic040.png)
 
-Next open the entry _Java > Compiler_ and set the compiler compliance level to 1.6.
+Next open the entry _Java > Compiler_ and set the compiler compliance level to 1.7.
 
 ![img](files/StepByStepEclipse/StepByStepEclipse.pic045.png)
 
@@ -38,7 +38,7 @@ Select _Existing Projects into Workspace_.
 
 ![img](files/StepByStepEclipse/StepByStepEclipse.pic060.png)
 
-Navigate to the _openMDX SDK_ installation directory and then to the project folder _openmdx_. Eclipse recursively scans all directories. Deselect the projects _openMDX/Core_, _openMDX/Security_ and _openMDX/Portal_ because they occur multiple times as indicated below:
+Navigate to the _openMDX SDK_ installation directory and then to the project folder _openmdx2_. Eclipse recursively scans all directories. Deselect the projects _openMDX/Core_, _openMDX/Security_ and _openMDX/Portal_ because they occur multiple times as indicated below:
 
 ![img](files/StepByStepEclipse/StepByStepEclipse.pic080.png)
 

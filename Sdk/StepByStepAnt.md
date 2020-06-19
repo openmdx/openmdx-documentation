@@ -6,8 +6,8 @@ This guide explains how to build _openMDX SDK_ from the sources.
 
 Before you are able to build openMDX make sure that you have the following software installed:
 
-* [JDK 1.6](http://java.sun.com/javase/downloads/widget/jdk6.jsp) or [OpenJDK 1.6](http://openjdk.java.net/)
-* [Apache Ant 1.9.2](http://ant.apache.org/bindownload.cgi)
+* [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/) or [OpenJDK 1.7](https://jdk7.java.net/)
+* [Apache Ant 1.9.4](http://ant.apache.org/bindownload.cgi)
 * [GIT](http://git-scm.com/downloads)
 
 ## Build for Linux ##
@@ -24,8 +24,8 @@ Launch _vi_ and create the script _setenv.sh_. Adapt the variables to your envir
 
 ~~~~~~
 #!/bin/sh
-export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
-export ANT_HOME=/opt/apache-ant-1.9.2
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+export ANT_HOME=/opt/apache-ant-1.9.4
 export JRE_16=$JAVA_HOME/jre
 export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:$PATH
 ~~~~~~
@@ -41,10 +41,10 @@ Get the openMDX sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx.git openmdx
-git checkout openmdx-2.13.0
+git checkout openmdx-2.14.0
 ~~~~~~
 
-And then build _openMDX/Core_.
+And then build _openMDX_.
 
 ~~~~~~
 cd openmdx
@@ -65,8 +65,8 @@ notepad setenv.cmd
 Launch _notepad_ and create the script _setenv.cmd_. Adapt the variables to your environment. Save the file and exit vi.
 
 ~~~~~~
-set JAVA_HOME=C:\pgm\Java\jdk1.6.0_29
-set ANT_HOME=C:\pgm\apache-ant-1.9.2
+set JAVA_HOME=C:\pgm\Java\jdk1.7.0_65
+set ANT_HOME=C:\pgm\apache-ant-1.9.4
 set JRE_16=%JAVA_HOME%\jre
 set OPENMDX_BIN_HOME=c:\temp\dev\openmdx\core\thirdparty
 set PATH=%JAVA_HOME%\bin;%ANT_HOME%\bin;%OPENMDX_BIN_HOME%\bin\windows;%PATH%
@@ -82,10 +82,10 @@ Get the openMDX sources from the GIT repository:
 
 ~~~~~~
 git clone https://github.com/openmdx/openmdx.git openmdx
-git checkout openmdx-2.12.0
+git checkout openmdx-2.14.0
 ~~~~~~
 
-And then build _openMDX/Core_.
+And then build _openMDX_.
 
 ~~~~~~
 cd openmdx
