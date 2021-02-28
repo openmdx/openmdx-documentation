@@ -2,7 +2,7 @@
 
 This guide explains how to setup _openMDX SDK_ for _Eclipse_.
 
-__IMPORTANT:__ This guide assumes that the _openMDX SDK_ is prepared as described in [openMDX SDK for Ant Step-by-Step](./StepByStepAnt.md).
+__IMPORTANT:__ This guide assumes that the _openMDX SDK_ is prepared as described in [openMDX SDK: build from source](./BuildFromSource.md).
 
 Make sure that you have installed _Eclipse Neon_ (download it from [here](http://www.eclipse.org/downloads/packages/release/Neon/1.RC3/)).
 

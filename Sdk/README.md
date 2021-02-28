@@ -1,7 +1,7 @@
 # Welcome to openMDX SDK #
 
-## [openMDX SDK for Ant Step-by-Step Guide](./StepByStepAnt.md) ##
-This guide explains how to install and setup openMDX SDK for Ant.
+## [openMDX SDK: build from source](./BuildFromSource.md) ##
+This guide explains how to build openMDX from source.
 
 ## [openMDX SDK for Eclipse Step-by-Step Guide](./StepByStepEclipse.md) ##
 This guide explains how to prepare openMDX SDK for Eclipse.
