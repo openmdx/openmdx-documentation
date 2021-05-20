@@ -1,108 +1,44 @@
-# openMDX SDK: build from source #
+# Build from source #
 
-This guide explains how to build _openMDX SDK_ from the sources.
+This guide explains how to build _openMDX_ from the sources.
 
 ## Prerequisites ##
 
-Before you are able to build openMDX make sure that you have the following software installed:
+Make sure that you have the following software installed:
 
-* [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/) or [OpenJDK 1.8](https://jdk8.java.net/)
-* [Apache Ant 1.10.8](http://ant.apache.org/bindownload.cgi)
+* [JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/) or [OpenJDK 8](https://openjdk.java.net/projects/jdk/8/)
+* [JDK 11](http://www.oracle.com/technetwork/java/javase/downloads/) or [OpenJDK 11](https://openjdk.java.net/projects/jdk/11/)
+* Set the environment variable JRE\_18 so that it points to the _jre_ directory of the JDK 8 installation, e.g. _/usr/lib/jvm/java-8-openjdk-amd64/jre_
+* Set the path to JDK\_11
+* [Gradle 6.9](https://gradle.org/install/)
 * [GIT](http://git-scm.com/downloads)
 
-## Build for Linux ##
-
-In a first step open a shell and cd to a directory where you want to download and build openMDX. Then execute the commands:
-
-~~~~~~
-mkdir dev
-cd dev
-vi setenv.sh
-~~~~~~
-
-Launch _vi_ and create the script _setenv.sh_. Adapt the variables to your environment. Save the file and exit vi.
-
-~~~~~~
-#!/bin/sh
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export ANT_HOME=/opt/apache-ant-1.10.8
-export JRE_18=$JAVA_HOME/jre
-export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:$PATH
-~~~~~~
-
-Make the _setenv.sh_ executable and run it.
-
-~~~~~~
-chmod a+x setenv.sh
-./setenv.sh
-~~~~~~
+## Build ##
 
 Get the openMDX sources from the GIT repository:
 
-~~~~~~
+```
 git clone https://github.com/openmdx/openmdx.git openmdx
-~~~~~~
+```
 
 And then build _openMDX_.
 
-~~~~~~
+```
 cd openmdx
-git checkout openmdx-2.17.5
-ant all
-~~~~~~
+git checkout openmdx-v2.17.8
+gradle clean
+gradle assemble
+```
 
+## Eclipse project files ##
 
-## Build for Windows ##
+Generate the Eclipse project files as follows:
 
-In a first step open a shell and cd to a directory where you want to download and build openMDX. Then execute the commands:
+```
+gradle eclipse
+```
 
-~~~~~~
-mkdir dev
-cd dev
-notepad setenv.cmd
-~~~~~~
-
-Launch _notepad_ and create the script _setenv.cmd_. Adapt the variables to your environment. Save the file and exit vi.
-
-~~~~~~
-set JAVA_HOME=C:\pgm\Java\jdk1.8.0_65
-set ANT_HOME=C:\pgm\apache-ant-1.10.8
-set JRE_18=%JAVA_HOME%\jre
-set OPENMDX_BIN_HOME=c:\temp\dev\openmdx\core\thirdparty
-set PATH=%JAVA_HOME%\bin;%ANT_HOME%\bin;%OPENMDX_BIN_HOME%\bin\windows;%PATH%
-~~~~~~
-
-Run _setenv.cmd_.
-
-~~~~~~
-setenv.cmd
-~~~~~~
-
-Get the openMDX sources from the GIT repository:
-
-~~~~~~
-git clone https://github.com/openmdx/openmdx.git openmdx
-~~~~~~
-
-And then build _openMDX_.
-
-~~~~~~
-cd openmdx
-git checkout openmdx-2.17.5
-ant all
-~~~~~~
-
-
-## Verify ##
-After successful installation the directory structure looks like shown below. The top-level directories are:
-
-* _openmdx/core_
-* _openmdx/security_
-* _openmdx/portal_
-* _openmdx/test-core_
-
-![img](files/BuildFromSource/BuildFromSource.p007.png)
-
+This generates the Eclipse project files for the sub-projects _client_, _core_, _portal_, _security_, _tomcat_. Import the projects into a new or existing Eclipse workspace.  
 
 ## Congratulations ##
 Congratulations! You have successfully built _openMDX SDK_ from the sources.
