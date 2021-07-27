@@ -25,7 +25,7 @@ And then build _openMDX_.
 
 ```
 cd openmdx
-git checkout openmdx-v2.17.8
+git checkout openmdx-v2.17.9
 gradle clean
 gradle assemble
 ```
