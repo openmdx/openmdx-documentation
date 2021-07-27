@@ -1,6 +1,8 @@
 # openMDX Workshop Project #
 
-This guide explains how to write applications using _openMDX_ based on the _openMDX/Examples Workshop_ project.
+**IMPORTANT: This manual is out of date. It is currently being adapted to the gradle based build process of openMDX 2.17.8.**
+
+This guide explains how to write applications using _openMDX_ based on the _openMDX/Examples Workshop_ project. 
 
 ## Prerequisites ##
 

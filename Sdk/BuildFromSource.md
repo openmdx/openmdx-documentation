@@ -15,7 +15,7 @@ Make sure that you have the following software installed:
 
 ## Build ##
 
-Get the openMDX sources from the GIT repository:
+Clone the openMDX sources from the GIT repository:
 
 ```
 git clone https://github.com/openmdx/openmdx.git openmdx
@@ -41,4 +41,4 @@ gradle eclipse
 This generates the Eclipse project files for the sub-projects _client_, _core_, _portal_, _security_, _tomcat_. Import the projects into a new or existing Eclipse workspace.  
 
 ## Congratulations ##
-Congratulations! You have successfully built _openMDX SDK_ from the sources.
+Congratulations! You have successfully built _openMDX_ from the sources.

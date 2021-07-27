@@ -1,9 +1,9 @@
 # Welcome to openMDX SDK #
 
-## [openMDX SDK: build from source](./BuildFromSource.md) ##
+## [openMDX Build from source](./BuildFromSource.md) ##
 This guide explains how to build openMDX from source.
 
-## [openMDX SDK Examples](./Examples.md) ##
+## [openMDX Examples](./Examples.md) ##
 This guide explains how to install and build the openMDX Examples.
 
 ## [openMDX Workshop Project](./Workshop.md) ##
