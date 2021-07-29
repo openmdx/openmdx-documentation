@@ -48,5 +48,20 @@ Now you are ready to run the JUnit tests:
 gradle test
 ~~~~~~
 
+~~~~~~
+> Task :helloworld:test
+
+TestHelloWorld_1 > testHelloWorld() PASSED
+
+> Task :workshop:test
+
+TestWorkshop_1 > testVolatile() PASSED
+
+TestWorkshop_1 > testStandard() PASSED
+
+BUILD SUCCESSFUL in 3s
+10 actionable tasks: 4 executed, 6 up-to-date
+~~~~~~
+
 ## Congratulations ##
 Congratulations! You have successfully built and run the _openMDX Examples_.
