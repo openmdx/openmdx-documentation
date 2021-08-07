@@ -302,5 +302,60 @@ BUILD SUCCESSFUL in 2s
 5 actionable tasks: 1 executed, 4 up-to-date
 ~~~~~~
 
+### Deploy as REST service ###
+The workshop application can be deployed as REST service. For this purpose the gradle task _assemble_
+has built the WAR _openmdx-workshop-rest.war_ which is located in _./build/deployment-unit/_.
+
+The WAR can be deployed on _Apache TomEE Plus 8.0.6_ as follows:
+
+* Download _Apache TomEE Plus 8.0.6_ from [here](https://tomee.apache.org/download.html#tomee-8.0)
+* Copy _openmdx-workshop-rest.war_ to _apache-tomee-plus-8.0.3/webapps/_
+* Upgrade the JDBC driver for HSQDB: copy _hsqldb-2.5.0.jar_ to _apache-tomee-plus-8.0.3/lib/_ and remove _hsqldb-2.3.2.jar_.
+  **NOTE:** the version of the driver must match with the version that was specified when launching the _WORKSHOP_ database with the startup 
+  script located in _./etc/data/workshop/_
+* In _./conf/tomee.xml_ add the following JDBC datasource:
+
+~~~~~~
+<Resource id="jdbc/jdbc_openmdx_example_workshop" type="DataSource">
+ JdbcDriver org.hsqldb.jdbcDriver
+ JdbcUrl jdbc:hsqldb:hsql://127.0.0.1:9002/WORKSHOP
+ UserName sa
+ Password manager99
+ JtaManaged true
+</Resource>
+~~~~~~
+
+* In _./conf/tomcat-users.xml_ add the user _guest_:
+
+~~~~~~
+<user username="guest" password="guest" roles="Guest"/>
+~~~~~~
+
+* Start _TomEE Plus_ on the command-line with _./bin/catalina.sh_. If properly configured and deployed the log looks as follows:
+
+~~~~~~
+...
+INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [/opt/apache-tomee-plus-8.0.3/webapps/openmdx-workshop-rest.war]
+INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /openmdx-workshop-rest
+INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/apache-tomee-plus-8.0.3/webapps/openmdx-workshop-rest
+INFO [main] org.apache.openejb.config.AutoConfig.processResourceRef Auto-linking resource-ref 'jdbc/jdbc_openmdx_example_workshop' in bean openmdx-workshop-rest.Comp1958403865 to Resource(id=jdbc/jdbc_openmdx_example_workshop)
+INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/apache-tomee-plus-8.0.3/webapps/openmdx-workshop-rest" loaded.
+INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/apache-tomee-plus-8.0.3/webapps/openmdx-workshop-rest
+INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file /opt/apache-tomee-plus-8.0.3/webapps/openmdx-workshop-rest/META-INF/context.xml
+INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/opt/apache-tomee-plus-8.0.3/webapps/openmdx-workshop-rest)
+INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [/opt/apache-tomee-plus-8.0.3/webapps/openmdx-workshop-rest.war] has finished in [113] ms
+...
+~~~~~~
+
+* Launch Swagger with the following URL and explore the API:
+
+~~~~~~
+http://localhost:8080/openmdx-workshop-rest/api-ui/index.html?url=http://localhost:8080/openmdx-workshop-rest/org.openmdx.example.workshop1/provider/Workshop/segment/Standard/:api
+~~~~~~
+
+![img](files/Workshop/Workshop.pic030.png)
+
 ## Congratulations ##
 Congratulations! You have successfully completed the _openMDX Workshop Project_ guide.
