@@ -25,7 +25,7 @@ And then build _openMDX Examples_.
 
 ~~~~~~
 cd openmdx-example
-git checkout openmdx-v2.17.9
+git checkout openmdx-v2.17.10
 gradle clean
 gradle assemble
 ~~~~~~
